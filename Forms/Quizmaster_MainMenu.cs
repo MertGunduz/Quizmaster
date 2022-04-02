@@ -26,7 +26,7 @@ namespace Quizmaster.Forms
             {                
                 // ADDS THE GENRES
                 genresList.Add(File.ReadAllLines($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\Genres.txt")[i]);
-                QuestionGenres_RichTextBox.Text += genresList[i] + "\n";
+                QuestionGenres_RichTextBox.Text += "  " + genresList[i] + "\n";
             }
         }
 
