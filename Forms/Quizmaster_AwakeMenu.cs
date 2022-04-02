@@ -30,7 +30,13 @@ namespace Quizmaster.Forms
             {
                 if (Directory.Exists(drive.Name + "Quizmaster"))
                 {
+                    // SETS THE Configuration Path
+                    Classes.Configuration.drivePath = drive.Name;
+                    
+                    // SETS THE BOOLEAN TRUE
                     directoryExist = true;
+
+                    // BREAKS THE LOOP
                     break;
                 }
             }
@@ -42,10 +48,15 @@ namespace Quizmaster.Forms
                 {
                     if (drive.IsReady && drive.TotalSize >= 100000)
                     {
+                        // SETS THE Configuration Path
+                        Classes.Configuration.drivePath = drive.Name;
+
                         // CREATES DIRECTORIES TO THE VALID DRIVE
                         Directory.CreateDirectory(drive.Name + "Quizmaster");
                         Directory.CreateDirectory(drive.Name + "Quizmaster\\Images");
-                        Directory.CreateDirectory(drive.Name + "Quizmaster\\Questions_And_Genres");
+                        Directory.CreateDirectory(drive.Name + "Quizmaster\\Questions & Genres");
+
+                        // BREAKS THE LOOP
                         break;
                     }
                 }
