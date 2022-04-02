@@ -83,6 +83,16 @@ namespace Quizmaster {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_AddNewMultipleAnswerQuestionText {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_AddNewMultipleAnswerQuestionText", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Quizmaster_AddNewQuestionIcon {
             get {
                 object obj = ResourceManager.GetObject("Quizmaster_AddNewQuestionIcon", resourceCulture);
@@ -96,6 +106,16 @@ namespace Quizmaster {
         internal static System.Drawing.Bitmap Quizmaster_AddNewQuestionText {
             get {
                 object obj = ResourceManager.GetObject("Quizmaster_AddNewQuestionText", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_AddNewTextQuestionText {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_AddNewTextQuestionText", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
