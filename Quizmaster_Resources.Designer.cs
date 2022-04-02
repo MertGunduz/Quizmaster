@@ -59,5 +59,35 @@ namespace Quizmaster {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_LogoSmall {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_LogoSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_LogoText {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_LogoText", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
