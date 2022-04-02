@@ -63,6 +63,16 @@ namespace Quizmaster {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_ExitIcon {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_ExitIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Quizmaster_Logo {
             get {
                 object obj = ResourceManager.GetObject("Quizmaster_Logo", resourceCulture);
@@ -96,6 +106,16 @@ namespace Quizmaster {
         internal static System.Drawing.Bitmap Quizmaster_LogoTextSmall {
             get {
                 object obj = ResourceManager.GetObject("Quizmaster_LogoTextSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_MinimizeIcon {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_MinimizeIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

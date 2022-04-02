@@ -17,3 +17,7 @@ C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Qu
 C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.genruntimeconfig.cache
 C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\ref\Quizmaster.dll
 C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_MainMenu.resources
+C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_MCImageQuestionMenu.resources
+C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_MCNoImageQuestion.resources
+C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_TFImageQuestion.resources
+C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_TFNoImageQuestion.resources

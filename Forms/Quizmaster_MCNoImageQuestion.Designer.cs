@@ -1,6 +1,6 @@
 ﻿namespace Quizmaster.Forms
 {
-    partial class Quizmaster_MainMenu
+    partial class Quizmaster_MCNoImageQuestion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Quizmaster_MainMenu
-            // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Name = "Quizmaster_MainMenu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quizmaster";
-            this.ResumeLayout(false);
-
+            this.Text = "Quizmaster_MCNoImageQuestion";
         }
 
         #endregion
