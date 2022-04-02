@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.RightBorder_Panel = new System.Windows.Forms.Panel();
             this.LeftBorder_Panel = new System.Windows.Forms.Panel();
             this.TopBorder_Panel = new System.Windows.Forms.Panel();
@@ -47,6 +48,7 @@
             this.TopInnerMargin_Panel = new System.Windows.Forms.Panel();
             this.LeftInnerMargin_Panel = new System.Windows.Forms.Panel();
             this.RightInnerMargin_Panel = new System.Windows.Forms.Panel();
+            this.AwakeMenu_TimerINS = new System.Windows.Forms.Timer(this.components);
             this.InnerLogo_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoText_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
@@ -225,6 +227,11 @@
             this.RightInnerMargin_Panel.Size = new System.Drawing.Size(50, 292);
             this.RightInnerMargin_Panel.TabIndex = 6;
             // 
+            // AwakeMenu_TimerINS
+            // 
+            this.AwakeMenu_TimerINS.Interval = 15;
+            this.AwakeMenu_TimerINS.Tick += new System.EventHandler(this.AwakeMenu_TimerINS_Tick);
+            // 
             // Quizmaster_AwakeMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -277,5 +284,6 @@
         private Panel RightInnerMargin_Panel;
         private PictureBox LogoText_PictureBox;
         private PictureBox Logo_PictureBox;
+        private System.Windows.Forms.Timer AwakeMenu_TimerINS;
     }
 }
