@@ -41,15 +41,15 @@
             this.BottomInnerBorder_Panel = new System.Windows.Forms.Panel();
             this.TopInnerBorder_Panel = new System.Windows.Forms.Panel();
             this.InnerLogo_Panel = new System.Windows.Forms.Panel();
-            this.LeftInnerMargin_Panel = new System.Windows.Forms.Panel();
-            this.RightInnerMargin_Panel = new System.Windows.Forms.Panel();
+            this.LogoText_PictureBox = new System.Windows.Forms.PictureBox();
+            this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.BottomInnerMargin_Panel = new System.Windows.Forms.Panel();
             this.TopInnerMargin_Panel = new System.Windows.Forms.Panel();
-            this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
-            this.LogoText_PictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftInnerMargin_Panel = new System.Windows.Forms.Panel();
+            this.RightInnerMargin_Panel = new System.Windows.Forms.Panel();
             this.InnerLogo_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoText_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // RightBorder_Panel
@@ -171,21 +171,27 @@
             this.InnerLogo_Panel.Size = new System.Drawing.Size(292, 292);
             this.InnerLogo_Panel.TabIndex = 12;
             // 
-            // LeftInnerMargin_Panel
+            // LogoText_PictureBox
             // 
-            this.LeftInnerMargin_Panel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftInnerMargin_Panel.Location = new System.Drawing.Point(0, 0);
-            this.LeftInnerMargin_Panel.Name = "LeftInnerMargin_Panel";
-            this.LeftInnerMargin_Panel.Size = new System.Drawing.Size(50, 292);
-            this.LeftInnerMargin_Panel.TabIndex = 7;
+            this.LogoText_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LogoText_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_LogoText;
+            this.LogoText_PictureBox.Location = new System.Drawing.Point(50, 175);
+            this.LogoText_PictureBox.Name = "LogoText_PictureBox";
+            this.LogoText_PictureBox.Size = new System.Drawing.Size(192, 67);
+            this.LogoText_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.LogoText_PictureBox.TabIndex = 11;
+            this.LogoText_PictureBox.TabStop = false;
             // 
-            // RightInnerMargin_Panel
+            // Logo_PictureBox
             // 
-            this.RightInnerMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.RightInnerMargin_Panel.Location = new System.Drawing.Point(242, 0);
-            this.RightInnerMargin_Panel.Name = "RightInnerMargin_Panel";
-            this.RightInnerMargin_Panel.Size = new System.Drawing.Size(50, 292);
-            this.RightInnerMargin_Panel.TabIndex = 6;
+            this.Logo_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_Logo;
+            this.Logo_PictureBox.Location = new System.Drawing.Point(50, 50);
+            this.Logo_PictureBox.Name = "Logo_PictureBox";
+            this.Logo_PictureBox.Size = new System.Drawing.Size(192, 125);
+            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Logo_PictureBox.TabIndex = 10;
+            this.Logo_PictureBox.TabStop = false;
             // 
             // BottomInnerMargin_Panel
             // 
@@ -203,26 +209,21 @@
             this.TopInnerMargin_Panel.Size = new System.Drawing.Size(192, 50);
             this.TopInnerMargin_Panel.TabIndex = 8;
             // 
-            // Logo_PictureBox
+            // LeftInnerMargin_Panel
             // 
-            this.Logo_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_Logo;
-            this.Logo_PictureBox.Location = new System.Drawing.Point(50, 50);
-            this.Logo_PictureBox.Name = "Logo_PictureBox";
-            this.Logo_PictureBox.Size = new System.Drawing.Size(192, 125);
-            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Logo_PictureBox.TabIndex = 10;
-            this.Logo_PictureBox.TabStop = false;
+            this.LeftInnerMargin_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftInnerMargin_Panel.Location = new System.Drawing.Point(0, 0);
+            this.LeftInnerMargin_Panel.Name = "LeftInnerMargin_Panel";
+            this.LeftInnerMargin_Panel.Size = new System.Drawing.Size(50, 292);
+            this.LeftInnerMargin_Panel.TabIndex = 7;
             // 
-            // LogoText_PictureBox
+            // RightInnerMargin_Panel
             // 
-            this.LogoText_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LogoText_PictureBox.Location = new System.Drawing.Point(50, 175);
-            this.LogoText_PictureBox.Name = "LogoText_PictureBox";
-            this.LogoText_PictureBox.Size = new System.Drawing.Size(192, 67);
-            this.LogoText_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.LogoText_PictureBox.TabIndex = 11;
-            this.LogoText_PictureBox.TabStop = false;
+            this.RightInnerMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.RightInnerMargin_Panel.Location = new System.Drawing.Point(242, 0);
+            this.RightInnerMargin_Panel.Name = "RightInnerMargin_Panel";
+            this.RightInnerMargin_Panel.Size = new System.Drawing.Size(50, 292);
+            this.RightInnerMargin_Panel.TabIndex = 6;
             // 
             // Quizmaster_AwakeMenu
             // 
@@ -249,8 +250,8 @@
             this.Text = "Quizmaster";
             this.Load += new System.EventHandler(this.Quizmaster_AwakeMenu_Load);
             this.InnerLogo_Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoText_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
