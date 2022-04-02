@@ -14,6 +14,7 @@ namespace Quizmaster.Forms
     {
         // VARIABLES
         int timeCount = 0;
+        bool directoryExist = false;
 
         public Quizmaster_AwakeMenu()
         {
@@ -22,6 +23,34 @@ namespace Quizmaster.Forms
 
         private void Quizmaster_AwakeMenu_Load(object sender, EventArgs e)
         {
+            // TAKES DRIVER INFORMATION
+            DriveInfo[] allDrives = DriveInfo.GetDrives();
+
+            foreach (DriveInfo drive in allDrives)
+            {
+                if (Directory.Exists(drive.Name + "Quizmaster"))
+                {
+                    directoryExist = true;
+                    break;
+                }
+            }
+
+            // CREATE DIRECTORY IF THE DIRECTORY NOT EXISTS 
+            if (!directoryExist)
+            {
+                foreach (DriveInfo drive in allDrives)
+                {
+                    if (drive.IsReady && drive.TotalSize >= 100000)
+                    {
+                        // CREATES DIRECTORIES TO THE VALID DRIVE
+                        Directory.CreateDirectory(drive.Name + "Quizmaster");
+                        Directory.CreateDirectory(drive.Name + "Quizmaster\\Images");
+                        Directory.CreateDirectory(drive.Name + "Quizmaster\\Questions_And_Genres");
+                        break;
+                    }
+                }
+            }
+
             // STARTS THE TIMER
             AwakeMenu_TimerINS.Start();
         }

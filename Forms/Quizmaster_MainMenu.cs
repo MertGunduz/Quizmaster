@@ -16,5 +16,17 @@ namespace Quizmaster.Forms
         {
             InitializeComponent();
         }
+
+
+        // WINDOWSTATE BUTTONS (EXIT AND MINIMIZE)
+        private void Exit_PictureBoxINS_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Minimize_PictureBoxINS_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

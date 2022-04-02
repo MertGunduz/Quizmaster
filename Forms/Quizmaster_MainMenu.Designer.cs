@@ -139,6 +139,7 @@
             this.Minimize_PictureBoxINS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Minimize_PictureBoxINS.TabIndex = 1;
             this.Minimize_PictureBoxINS.TabStop = false;
+            this.Minimize_PictureBoxINS.Click += new System.EventHandler(this.Minimize_PictureBoxINS_Click);
             // 
             // BottomMargin_Panel
             // 
@@ -301,6 +302,7 @@
             this.QuestionGenres_RichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QuestionGenres_RichTextBox.Location = new System.Drawing.Point(2, 50);
             this.QuestionGenres_RichTextBox.Name = "QuestionGenres_RichTextBox";
+            this.QuestionGenres_RichTextBox.ReadOnly = true;
             this.QuestionGenres_RichTextBox.Size = new System.Drawing.Size(453, 235);
             this.QuestionGenres_RichTextBox.TabIndex = 4;
             this.QuestionGenres_RichTextBox.Text = "";
@@ -444,6 +446,7 @@
             this.Exit_PictureBoxINS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Exit_PictureBoxINS.TabIndex = 0;
             this.Exit_PictureBoxINS.TabStop = false;
+            this.Exit_PictureBoxINS.Click += new System.EventHandler(this.Exit_PictureBoxINS_Click);
             // 
             // Quizmaster_MainMenu
             // 
