@@ -226,6 +226,7 @@
             this.AddNewQuestion_ButtonINS.Text = "Add New Question";
             this.AddNewQuestion_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddNewQuestion_ButtonINS.UseVisualStyleBackColor = true;
+            this.AddNewQuestion_ButtonINS.Click += new System.EventHandler(this.AddNewQuestion_ButtonINS_Click);
             // 
             // AddNewGenre_ButtonINS
             // 
@@ -242,7 +243,7 @@
             this.AddNewGenre_ButtonINS.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.AddNewGenre_ButtonINS.Size = new System.Drawing.Size(473, 50);
             this.AddNewGenre_ButtonINS.TabIndex = 49;
-            this.AddNewGenre_ButtonINS.Text = "Add New Genre";
+            this.AddNewGenre_ButtonINS.Text = "Add New Category";
             this.AddNewGenre_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddNewGenre_ButtonINS.UseVisualStyleBackColor = true;
             this.AddNewGenre_ButtonINS.Click += new System.EventHandler(this.AddNewGenre_ButtonINS_Click);
@@ -312,7 +313,7 @@
             // QuestionGenres_PictureBox
             // 
             this.QuestionGenres_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.QuestionGenres_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_QuestionGenresText;
+            this.QuestionGenres_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_QuestionCategoriesText;
             this.QuestionGenres_PictureBox.Location = new System.Drawing.Point(2, 0);
             this.QuestionGenres_PictureBox.Name = "QuestionGenres_PictureBox";
             this.QuestionGenres_PictureBox.Size = new System.Drawing.Size(473, 50);

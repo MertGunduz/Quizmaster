@@ -63,6 +63,26 @@ namespace Quizmaster {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_AddImageIcon {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_AddImageIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_AddNewCategoryText {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_AddNewCategoryText", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Quizmaster_AddNewGenreIcon {
             get {
                 object obj = ResourceManager.GetObject("Quizmaster_AddNewGenreIcon", resourceCulture);
@@ -86,6 +106,16 @@ namespace Quizmaster {
         internal static System.Drawing.Bitmap Quizmaster_AddNewMultipleAnswerQuestionText {
             get {
                 object obj = ResourceManager.GetObject("Quizmaster_AddNewMultipleAnswerQuestionText", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_AddNewQuestionCategoryText {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_AddNewQuestionCategoryText", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +226,16 @@ namespace Quizmaster {
         internal static System.Drawing.Bitmap Quizmaster_MultipleAnswerText {
             get {
                 object obj = ResourceManager.GetObject("Quizmaster_MultipleAnswerText", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_QuestionCategoriesText {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_QuestionCategoriesText", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

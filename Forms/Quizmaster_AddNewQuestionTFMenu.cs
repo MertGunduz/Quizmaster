@@ -16,5 +16,10 @@ namespace Quizmaster.Forms
         {
             InitializeComponent();
         }
+
+        private void AddImageToQuestion_ButtonINS_Click(object sender, EventArgs e)
+        {
+            AddImageHide_Panel.Visible = false;
+        }
     }
 }

@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Quizmaster_AddImageIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Quizmaster_AddImageIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Quizmaster_AddNewCategoryText" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Quizmaster_AddNewCategoryText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Quizmaster_AddNewGenreIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Quizmaster_AddNewGenreIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -126,6 +132,9 @@
   </data>
   <data name="Quizmaster_AddNewMultipleAnswerQuestionText" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Quizmaster_AddNewMultipleAnswerQuestionText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Quizmaster_AddNewQuestionCategoryText" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Quizmaster_AddNewQuestionCategoryText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Quizmaster_AddNewQuestionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Quizmaster_AddNewQuestionIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -159,6 +168,9 @@
   </data>
   <data name="Quizmaster_MultipleAnswerText" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Quizmaster_MultipleAnswerText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Quizmaster_QuestionCategoriesText" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Quizmaster_QuestionCategoriesText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Quizmaster_QuestionGenresText" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Quizmaster_QuestionGenresText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

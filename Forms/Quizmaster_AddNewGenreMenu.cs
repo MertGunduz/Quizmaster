@@ -31,14 +31,14 @@ namespace Quizmaster.Forms
             }
             else
             {
-                MessageBox.Show("Please Write Genre!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please Write Category!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         // PLACEHOLDER CLEAN
         private void GenreName_RichTextBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (GenreName_RichTextBox.Text == "  Genre Name:")
+            if (GenreName_RichTextBox.Text == "  Category Name:")
             {
                 GenreName_RichTextBox.Clear();
             }

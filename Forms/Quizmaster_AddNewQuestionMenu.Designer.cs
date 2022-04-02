@@ -63,6 +63,7 @@
             // 
             // MultipleAnswer_ButtonINS
             // 
+            this.MultipleAnswer_ButtonINS.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MultipleAnswer_ButtonINS.Dock = System.Windows.Forms.DockStyle.Left;
             this.MultipleAnswer_ButtonINS.FlatAppearance.BorderSize = 0;
             this.MultipleAnswer_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -76,6 +77,7 @@
             // 
             // FillInTheBlank_ButtonINS
             // 
+            this.FillInTheBlank_ButtonINS.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FillInTheBlank_ButtonINS.Dock = System.Windows.Forms.DockStyle.Left;
             this.FillInTheBlank_ButtonINS.FlatAppearance.BorderSize = 0;
             this.FillInTheBlank_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

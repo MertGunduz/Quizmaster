@@ -30,7 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Quizmaster_AddNewQuestionTFMenu));
             this.Mid_Panel = new System.Windows.Forms.Panel();
-            this.GenreName_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.ImageURL_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.AddImageToQuestion_ButtonINS = new System.Windows.Forms.Button();
+            this.Genre_ListBox = new System.Windows.Forms.ListBox();
+            this.QuestionAnswer_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.Question_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.AddNewGenre_PictureBox = new System.Windows.Forms.PictureBox();
             this.InnerLeftBorder_Panel = new System.Windows.Forms.Panel();
             this.InnerRightBorder_Panel = new System.Windows.Forms.Panel();
@@ -44,37 +48,102 @@
             this.RightBorder_Panel = new System.Windows.Forms.Panel();
             this.BottomBorder_Panel = new System.Windows.Forms.Panel();
             this.TopBorder_Panel = new System.Windows.Forms.Panel();
+            this.ClickButtonToAddImage_Label = new System.Windows.Forms.Label();
+            this.AddImageHide_Panel = new System.Windows.Forms.Panel();
             this.Mid_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AddNewGenre_PictureBox)).BeginInit();
+            this.AddImageHide_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Mid_Panel
             // 
             this.Mid_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.Mid_Panel.Controls.Add(this.GenreName_RichTextBox);
+            this.Mid_Panel.Controls.Add(this.AddImageHide_Panel);
+            this.Mid_Panel.Controls.Add(this.ImageURL_RichTextBox);
+            this.Mid_Panel.Controls.Add(this.AddImageToQuestion_ButtonINS);
+            this.Mid_Panel.Controls.Add(this.Genre_ListBox);
+            this.Mid_Panel.Controls.Add(this.QuestionAnswer_RichTextBox);
+            this.Mid_Panel.Controls.Add(this.Question_RichTextBox);
             this.Mid_Panel.Controls.Add(this.AddNewGenre_PictureBox);
             this.Mid_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Mid_Panel.Location = new System.Drawing.Point(24, 24);
             this.Mid_Panel.Name = "Mid_Panel";
-            this.Mid_Panel.Size = new System.Drawing.Size(548, 243);
+            this.Mid_Panel.Size = new System.Drawing.Size(548, 328);
             this.Mid_Panel.TabIndex = 29;
             // 
-            // GenreName_RichTextBox
+            // ImageURL_RichTextBox
             // 
-            this.GenreName_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.GenreName_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GenreName_RichTextBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.GenreName_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.GenreName_RichTextBox.Location = new System.Drawing.Point(0, 57);
-            this.GenreName_RichTextBox.Name = "GenreName_RichTextBox";
-            this.GenreName_RichTextBox.Size = new System.Drawing.Size(548, 29);
-            this.GenreName_RichTextBox.TabIndex = 1;
-            this.GenreName_RichTextBox.Text = "  Genre Name:";
+            this.ImageURL_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.ImageURL_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ImageURL_RichTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ImageURL_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.ImageURL_RichTextBox.Location = new System.Drawing.Point(0, 291);
+            this.ImageURL_RichTextBox.Name = "ImageURL_RichTextBox";
+            this.ImageURL_RichTextBox.Size = new System.Drawing.Size(548, 29);
+            this.ImageURL_RichTextBox.TabIndex = 8;
+            this.ImageURL_RichTextBox.Text = "  Image URL: ";
+            // 
+            // AddImageToQuestion_ButtonINS
+            // 
+            this.AddImageToQuestion_ButtonINS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddImageToQuestion_ButtonINS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AddImageToQuestion_ButtonINS.FlatAppearance.BorderSize = 0;
+            this.AddImageToQuestion_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddImageToQuestion_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddImageToQuestion_ButtonINS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.AddImageToQuestion_ButtonINS.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_AddImageIcon;
+            this.AddImageToQuestion_ButtonINS.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AddImageToQuestion_ButtonINS.Location = new System.Drawing.Point(0, 241);
+            this.AddImageToQuestion_ButtonINS.Name = "AddImageToQuestion_ButtonINS";
+            this.AddImageToQuestion_ButtonINS.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.AddImageToQuestion_ButtonINS.Size = new System.Drawing.Size(548, 50);
+            this.AddImageToQuestion_ButtonINS.TabIndex = 7;
+            this.AddImageToQuestion_ButtonINS.Text = "Add Image To Question";
+            this.AddImageToQuestion_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddImageToQuestion_ButtonINS.UseVisualStyleBackColor = true;
+            this.AddImageToQuestion_ButtonINS.Click += new System.EventHandler(this.AddImageToQuestion_ButtonINS_Click);
+            // 
+            // Genre_ListBox
+            // 
+            this.Genre_ListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.Genre_ListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Genre_ListBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Genre_ListBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.Genre_ListBox.FormattingEnabled = true;
+            this.Genre_ListBox.ItemHeight = 21;
+            this.Genre_ListBox.Location = new System.Drawing.Point(0, 115);
+            this.Genre_ListBox.Name = "Genre_ListBox";
+            this.Genre_ListBox.Size = new System.Drawing.Size(548, 126);
+            this.Genre_ListBox.TabIndex = 6;
+            // 
+            // QuestionAnswer_RichTextBox
+            // 
+            this.QuestionAnswer_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.QuestionAnswer_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuestionAnswer_RichTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.QuestionAnswer_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.QuestionAnswer_RichTextBox.Location = new System.Drawing.Point(0, 86);
+            this.QuestionAnswer_RichTextBox.Name = "QuestionAnswer_RichTextBox";
+            this.QuestionAnswer_RichTextBox.Size = new System.Drawing.Size(548, 29);
+            this.QuestionAnswer_RichTextBox.TabIndex = 2;
+            this.QuestionAnswer_RichTextBox.Text = "  Question Answer:";
+            // 
+            // Question_RichTextBox
+            // 
+            this.Question_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.Question_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Question_RichTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Question_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.Question_RichTextBox.Location = new System.Drawing.Point(0, 57);
+            this.Question_RichTextBox.Name = "Question_RichTextBox";
+            this.Question_RichTextBox.Size = new System.Drawing.Size(548, 29);
+            this.Question_RichTextBox.TabIndex = 1;
+            this.Question_RichTextBox.Text = "  Question:";
             // 
             // AddNewGenre_PictureBox
             // 
             this.AddNewGenre_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AddNewGenre_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_AddNewGenreText;
+            this.AddNewGenre_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_AddNewTextQuestionText;
             this.AddNewGenre_PictureBox.Location = new System.Drawing.Point(0, 0);
             this.AddNewGenre_PictureBox.Name = "AddNewGenre_PictureBox";
             this.AddNewGenre_PictureBox.Size = new System.Drawing.Size(548, 57);
@@ -88,7 +157,7 @@
             this.InnerLeftBorder_Panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.InnerLeftBorder_Panel.Location = new System.Drawing.Point(22, 24);
             this.InnerLeftBorder_Panel.Name = "InnerLeftBorder_Panel";
-            this.InnerLeftBorder_Panel.Size = new System.Drawing.Size(2, 243);
+            this.InnerLeftBorder_Panel.Size = new System.Drawing.Size(2, 328);
             this.InnerLeftBorder_Panel.TabIndex = 28;
             // 
             // InnerRightBorder_Panel
@@ -97,14 +166,14 @@
             this.InnerRightBorder_Panel.Dock = System.Windows.Forms.DockStyle.Right;
             this.InnerRightBorder_Panel.Location = new System.Drawing.Point(572, 24);
             this.InnerRightBorder_Panel.Name = "InnerRightBorder_Panel";
-            this.InnerRightBorder_Panel.Size = new System.Drawing.Size(2, 243);
+            this.InnerRightBorder_Panel.Size = new System.Drawing.Size(2, 328);
             this.InnerRightBorder_Panel.TabIndex = 27;
             // 
             // InnerBottomBorder_Panel
             // 
             this.InnerBottomBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
             this.InnerBottomBorder_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.InnerBottomBorder_Panel.Location = new System.Drawing.Point(22, 267);
+            this.InnerBottomBorder_Panel.Location = new System.Drawing.Point(22, 352);
             this.InnerBottomBorder_Panel.Name = "InnerBottomBorder_Panel";
             this.InnerBottomBorder_Panel.Size = new System.Drawing.Size(552, 2);
             this.InnerBottomBorder_Panel.TabIndex = 26;
@@ -121,7 +190,7 @@
             // BottomMargin_Panel
             // 
             this.BottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BottomMargin_Panel.Location = new System.Drawing.Point(22, 269);
+            this.BottomMargin_Panel.Location = new System.Drawing.Point(22, 354);
             this.BottomMargin_Panel.Name = "BottomMargin_Panel";
             this.BottomMargin_Panel.Size = new System.Drawing.Size(552, 20);
             this.BottomMargin_Panel.TabIndex = 24;
@@ -139,7 +208,7 @@
             this.LeftMargin_Panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftMargin_Panel.Location = new System.Drawing.Point(2, 2);
             this.LeftMargin_Panel.Name = "LeftMargin_Panel";
-            this.LeftMargin_Panel.Size = new System.Drawing.Size(20, 287);
+            this.LeftMargin_Panel.Size = new System.Drawing.Size(20, 372);
             this.LeftMargin_Panel.TabIndex = 22;
             // 
             // RightMargin_Panel
@@ -147,7 +216,7 @@
             this.RightMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
             this.RightMargin_Panel.Location = new System.Drawing.Point(574, 2);
             this.RightMargin_Panel.Name = "RightMargin_Panel";
-            this.RightMargin_Panel.Size = new System.Drawing.Size(20, 287);
+            this.RightMargin_Panel.Size = new System.Drawing.Size(20, 372);
             this.RightMargin_Panel.TabIndex = 21;
             // 
             // LeftBorder_Panel
@@ -156,7 +225,7 @@
             this.LeftBorder_Panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftBorder_Panel.Location = new System.Drawing.Point(0, 2);
             this.LeftBorder_Panel.Name = "LeftBorder_Panel";
-            this.LeftBorder_Panel.Size = new System.Drawing.Size(2, 287);
+            this.LeftBorder_Panel.Size = new System.Drawing.Size(2, 372);
             this.LeftBorder_Panel.TabIndex = 20;
             // 
             // RightBorder_Panel
@@ -165,14 +234,14 @@
             this.RightBorder_Panel.Dock = System.Windows.Forms.DockStyle.Right;
             this.RightBorder_Panel.Location = new System.Drawing.Point(594, 2);
             this.RightBorder_Panel.Name = "RightBorder_Panel";
-            this.RightBorder_Panel.Size = new System.Drawing.Size(2, 287);
+            this.RightBorder_Panel.Size = new System.Drawing.Size(2, 372);
             this.RightBorder_Panel.TabIndex = 19;
             // 
             // BottomBorder_Panel
             // 
             this.BottomBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
             this.BottomBorder_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BottomBorder_Panel.Location = new System.Drawing.Point(0, 289);
+            this.BottomBorder_Panel.Location = new System.Drawing.Point(0, 374);
             this.BottomBorder_Panel.Name = "BottomBorder_Panel";
             this.BottomBorder_Panel.Size = new System.Drawing.Size(596, 2);
             this.BottomBorder_Panel.TabIndex = 18;
@@ -186,11 +255,32 @@
             this.TopBorder_Panel.Size = new System.Drawing.Size(596, 2);
             this.TopBorder_Panel.TabIndex = 17;
             // 
+            // ClickButtonToAddImage_Label
+            // 
+            this.ClickButtonToAddImage_Label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ClickButtonToAddImage_Label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ClickButtonToAddImage_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.ClickButtonToAddImage_Label.Location = new System.Drawing.Point(0, 0);
+            this.ClickButtonToAddImage_Label.Name = "ClickButtonToAddImage_Label";
+            this.ClickButtonToAddImage_Label.Size = new System.Drawing.Size(548, 29);
+            this.ClickButtonToAddImage_Label.TabIndex = 6;
+            this.ClickButtonToAddImage_Label.Text = "\"Click Add Image To Question\" Button To Add Image";
+            this.ClickButtonToAddImage_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // AddImageHide_Panel
+            // 
+            this.AddImageHide_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.AddImageHide_Panel.Controls.Add(this.ClickButtonToAddImage_Label);
+            this.AddImageHide_Panel.Location = new System.Drawing.Point(0, 295);
+            this.AddImageHide_Panel.Name = "AddImageHide_Panel";
+            this.AddImageHide_Panel.Size = new System.Drawing.Size(548, 29);
+            this.AddImageHide_Panel.TabIndex = 9;
+            // 
             // Quizmaster_AddNewQuestionTFMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(596, 291);
+            this.ClientSize = new System.Drawing.Size(596, 376);
             this.Controls.Add(this.Mid_Panel);
             this.Controls.Add(this.InnerLeftBorder_Panel);
             this.Controls.Add(this.InnerRightBorder_Panel);
@@ -212,13 +302,14 @@
             this.Text = "Quizmaster";
             this.Mid_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AddNewGenre_PictureBox)).EndInit();
+            this.AddImageHide_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Panel Mid_Panel;
-        private RichTextBox GenreName_RichTextBox;
+        private RichTextBox Question_RichTextBox;
         private PictureBox AddNewGenre_PictureBox;
         private Panel InnerLeftBorder_Panel;
         private Panel InnerRightBorder_Panel;
@@ -232,5 +323,11 @@
         private Panel RightBorder_Panel;
         private Panel BottomBorder_Panel;
         private Panel TopBorder_Panel;
+        private RichTextBox ImageURL_RichTextBox;
+        private Button AddImageToQuestion_ButtonINS;
+        private ListBox Genre_ListBox;
+        private RichTextBox QuestionAnswer_RichTextBox;
+        private Panel AddImageHide_Panel;
+        private Label ClickButtonToAddImage_Label;
     }
 }

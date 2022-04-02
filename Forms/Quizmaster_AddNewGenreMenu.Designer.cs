@@ -180,7 +180,7 @@
             this.AddNewGenre_ButtonINS.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.AddNewGenre_ButtonINS.Size = new System.Drawing.Size(548, 50);
             this.AddNewGenre_ButtonINS.TabIndex = 50;
-            this.AddNewGenre_ButtonINS.Text = "Add New Genre";
+            this.AddNewGenre_ButtonINS.Text = "Add New Category";
             this.AddNewGenre_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddNewGenre_ButtonINS.UseVisualStyleBackColor = true;
             this.AddNewGenre_ButtonINS.Click += new System.EventHandler(this.AddNewGenre_ButtonINS_Click);
@@ -195,13 +195,13 @@
             this.GenreName_RichTextBox.Name = "GenreName_RichTextBox";
             this.GenreName_RichTextBox.Size = new System.Drawing.Size(548, 29);
             this.GenreName_RichTextBox.TabIndex = 1;
-            this.GenreName_RichTextBox.Text = "  Genre Name:";
+            this.GenreName_RichTextBox.Text = "  Category Name:";
             this.GenreName_RichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.GenreName_RichTextBox_MouseClick);
             // 
             // AddNewGenre_PictureBox
             // 
             this.AddNewGenre_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AddNewGenre_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_AddNewGenreText;
+            this.AddNewGenre_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_AddNewCategoryText;
             this.AddNewGenre_PictureBox.Location = new System.Drawing.Point(0, 0);
             this.AddNewGenre_PictureBox.Name = "AddNewGenre_PictureBox";
             this.AddNewGenre_PictureBox.Size = new System.Drawing.Size(548, 57);
