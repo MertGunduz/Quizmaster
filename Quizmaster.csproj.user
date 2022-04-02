@@ -4,6 +4,9 @@
     <Compile Update="Forms\Quizmaster_AddNewGenreMenu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Quizmaster_AddNewQuestionMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Quizmaster_AwakeMenu.cs">
       <SubType>Form</SubType>
     </Compile>
