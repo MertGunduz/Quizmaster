@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Quizmaster.Forms
 {
-    public partial class Quizmaster_TFNoImageQuestion : Form
+    public partial class Quizmaster : Form
     {
-        public Quizmaster_TFNoImageQuestion()
+        public Quizmaster()
         {
             InitializeComponent();
         }

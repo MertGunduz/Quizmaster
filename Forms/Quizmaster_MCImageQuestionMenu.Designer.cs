@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Quizmaster_MCImageQuestionMenu));
+            this.SuspendLayout();
+            // 
+            // Quizmaster_MCImageQuestionMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Quizmaster_MCImageQuestionMenu";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Quizmaster_MCImageQuestionMenu";
+            this.Text = "Quizmaster";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Quizmaster_TFImageQuestion));
+            this.SuspendLayout();
+            // 
+            // Quizmaster_TFImageQuestion
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Quizmaster_TFImageQuestion";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Quizmaster_TFImageQuestion";
+            this.Text = "Quizmaster";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
