@@ -56,6 +56,10 @@ namespace Quizmaster.Forms
                         Directory.CreateDirectory(drive.Name + "Quizmaster\\Images");
                         Directory.CreateDirectory(drive.Name + "Quizmaster\\Questions & Genres");
 
+                        // CREATES TXT FILES
+                        var questionsFile = File.Create(drive.Name + "Quizmaster\\Questions & Genres\\Questions.txt"); questionsFile.Close();
+                        var genresFile = File.Create(drive.Name + "Quizmaster\\Questions & Genres\\Genres.txt"); genresFile.Close();
+                        
                         // BREAKS THE LOOP
                         break;
                     }
