@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Quizmaster_AddNewQuestionMenu));
             this.Mid_Panel = new System.Windows.Forms.Panel();
+            this.MultipleAnswer_ButtonINS = new System.Windows.Forms.Button();
+            this.FillInTheBlank_ButtonINS = new System.Windows.Forms.Button();
             this.AddNewGenre_PictureBox = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.InnerLeftBorder_Panel = new System.Windows.Forms.Panel();
+            this.InnerRightBorder_Panel = new System.Windows.Forms.Panel();
+            this.InnerBottomBorder_Panel = new System.Windows.Forms.Panel();
+            this.InnerTopBorder_Panel = new System.Windows.Forms.Panel();
             this.BottomMargin_Panel = new System.Windows.Forms.Panel();
             this.TopMargin_Panel = new System.Windows.Forms.Panel();
             this.LeftMargin_Panel = new System.Windows.Forms.Panel();
@@ -43,8 +45,6 @@
             this.RightBorder_Panel = new System.Windows.Forms.Panel();
             this.BottomBorder_Panel = new System.Windows.Forms.Panel();
             this.TopBorder_Panel = new System.Windows.Forms.Panel();
-            this.FillInTheBlank_ButtonINS = new System.Windows.Forms.Button();
-            this.MultipleAnswer_ButtonINS = new System.Windows.Forms.Button();
             this.Mid_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AddNewGenre_PictureBox)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +61,32 @@
             this.Mid_Panel.Size = new System.Drawing.Size(548, 129);
             this.Mid_Panel.TabIndex = 29;
             // 
+            // MultipleAnswer_ButtonINS
+            // 
+            this.MultipleAnswer_ButtonINS.Dock = System.Windows.Forms.DockStyle.Left;
+            this.MultipleAnswer_ButtonINS.FlatAppearance.BorderSize = 0;
+            this.MultipleAnswer_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MultipleAnswer_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MultipleAnswer_ButtonINS.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_MultipleAnswerText;
+            this.MultipleAnswer_ButtonINS.Location = new System.Drawing.Point(274, 57);
+            this.MultipleAnswer_ButtonINS.Name = "MultipleAnswer_ButtonINS";
+            this.MultipleAnswer_ButtonINS.Size = new System.Drawing.Size(274, 72);
+            this.MultipleAnswer_ButtonINS.TabIndex = 2;
+            this.MultipleAnswer_ButtonINS.UseVisualStyleBackColor = true;
+            // 
+            // FillInTheBlank_ButtonINS
+            // 
+            this.FillInTheBlank_ButtonINS.Dock = System.Windows.Forms.DockStyle.Left;
+            this.FillInTheBlank_ButtonINS.FlatAppearance.BorderSize = 0;
+            this.FillInTheBlank_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FillInTheBlank_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FillInTheBlank_ButtonINS.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_FillInTheBlankText;
+            this.FillInTheBlank_ButtonINS.Location = new System.Drawing.Point(0, 57);
+            this.FillInTheBlank_ButtonINS.Name = "FillInTheBlank_ButtonINS";
+            this.FillInTheBlank_ButtonINS.Size = new System.Drawing.Size(274, 72);
+            this.FillInTheBlank_ButtonINS.TabIndex = 1;
+            this.FillInTheBlank_ButtonINS.UseVisualStyleBackColor = true;
+            // 
             // AddNewGenre_PictureBox
             // 
             this.AddNewGenre_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,41 +98,41 @@
             this.AddNewGenre_PictureBox.TabIndex = 0;
             this.AddNewGenre_PictureBox.TabStop = false;
             // 
-            // panel4
+            // InnerLeftBorder_Panel
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(22, 24);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2, 129);
-            this.panel4.TabIndex = 28;
+            this.InnerLeftBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.InnerLeftBorder_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.InnerLeftBorder_Panel.Location = new System.Drawing.Point(22, 24);
+            this.InnerLeftBorder_Panel.Name = "InnerLeftBorder_Panel";
+            this.InnerLeftBorder_Panel.Size = new System.Drawing.Size(2, 129);
+            this.InnerLeftBorder_Panel.TabIndex = 28;
             // 
-            // panel3
+            // InnerRightBorder_Panel
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(572, 24);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2, 129);
-            this.panel3.TabIndex = 27;
+            this.InnerRightBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.InnerRightBorder_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.InnerRightBorder_Panel.Location = new System.Drawing.Point(572, 24);
+            this.InnerRightBorder_Panel.Name = "InnerRightBorder_Panel";
+            this.InnerRightBorder_Panel.Size = new System.Drawing.Size(2, 129);
+            this.InnerRightBorder_Panel.TabIndex = 27;
             // 
-            // panel2
+            // InnerBottomBorder_Panel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(22, 153);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(552, 2);
-            this.panel2.TabIndex = 26;
+            this.InnerBottomBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.InnerBottomBorder_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.InnerBottomBorder_Panel.Location = new System.Drawing.Point(22, 153);
+            this.InnerBottomBorder_Panel.Name = "InnerBottomBorder_Panel";
+            this.InnerBottomBorder_Panel.Size = new System.Drawing.Size(552, 2);
+            this.InnerBottomBorder_Panel.TabIndex = 26;
             // 
-            // panel1
+            // InnerTopBorder_Panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(22, 22);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(552, 2);
-            this.panel1.TabIndex = 25;
+            this.InnerTopBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.InnerTopBorder_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.InnerTopBorder_Panel.Location = new System.Drawing.Point(22, 22);
+            this.InnerTopBorder_Panel.Name = "InnerTopBorder_Panel";
+            this.InnerTopBorder_Panel.Size = new System.Drawing.Size(552, 2);
+            this.InnerTopBorder_Panel.TabIndex = 25;
             // 
             // BottomMargin_Panel
             // 
@@ -176,42 +202,16 @@
             this.TopBorder_Panel.Size = new System.Drawing.Size(596, 2);
             this.TopBorder_Panel.TabIndex = 17;
             // 
-            // FillInTheBlank_ButtonINS
-            // 
-            this.FillInTheBlank_ButtonINS.Dock = System.Windows.Forms.DockStyle.Left;
-            this.FillInTheBlank_ButtonINS.FlatAppearance.BorderSize = 0;
-            this.FillInTheBlank_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FillInTheBlank_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FillInTheBlank_ButtonINS.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_FillInTheBlankText;
-            this.FillInTheBlank_ButtonINS.Location = new System.Drawing.Point(0, 57);
-            this.FillInTheBlank_ButtonINS.Name = "FillInTheBlank_ButtonINS";
-            this.FillInTheBlank_ButtonINS.Size = new System.Drawing.Size(274, 72);
-            this.FillInTheBlank_ButtonINS.TabIndex = 1;
-            this.FillInTheBlank_ButtonINS.UseVisualStyleBackColor = true;
-            // 
-            // MultipleAnswer_ButtonINS
-            // 
-            this.MultipleAnswer_ButtonINS.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MultipleAnswer_ButtonINS.FlatAppearance.BorderSize = 0;
-            this.MultipleAnswer_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MultipleAnswer_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MultipleAnswer_ButtonINS.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_MultipleAnswerText;
-            this.MultipleAnswer_ButtonINS.Location = new System.Drawing.Point(274, 57);
-            this.MultipleAnswer_ButtonINS.Name = "MultipleAnswer_ButtonINS";
-            this.MultipleAnswer_ButtonINS.Size = new System.Drawing.Size(274, 72);
-            this.MultipleAnswer_ButtonINS.TabIndex = 2;
-            this.MultipleAnswer_ButtonINS.UseVisualStyleBackColor = true;
-            // 
             // Quizmaster_AddNewQuestionMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(596, 177);
             this.Controls.Add(this.Mid_Panel);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.InnerLeftBorder_Panel);
+            this.Controls.Add(this.InnerRightBorder_Panel);
+            this.Controls.Add(this.InnerBottomBorder_Panel);
+            this.Controls.Add(this.InnerTopBorder_Panel);
             this.Controls.Add(this.BottomMargin_Panel);
             this.Controls.Add(this.TopMargin_Panel);
             this.Controls.Add(this.LeftMargin_Panel);
@@ -235,10 +235,10 @@
         #endregion
         private Panel Mid_Panel;
         private PictureBox AddNewGenre_PictureBox;
-        private Panel panel4;
-        private Panel panel3;
-        private Panel panel2;
-        private Panel panel1;
+        private Panel InnerLeftBorder_Panel;
+        private Panel InnerRightBorder_Panel;
+        private Panel InnerBottomBorder_Panel;
+        private Panel InnerTopBorder_Panel;
         private Panel BottomMargin_Panel;
         private Panel TopMargin_Panel;
         private Panel LeftMargin_Panel;

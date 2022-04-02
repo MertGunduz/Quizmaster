@@ -37,10 +37,10 @@
             this.RightMargin_Panel = new System.Windows.Forms.Panel();
             this.BottomMargin_Panel = new System.Windows.Forms.Panel();
             this.TopMargin_Panel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.InnerTopBorder_Panel = new System.Windows.Forms.Panel();
+            this.InnerBottomBorder_Panel = new System.Windows.Forms.Panel();
+            this.InnerRightBorder_Panel = new System.Windows.Forms.Panel();
+            this.InnerLeftBorder_Panel = new System.Windows.Forms.Panel();
             this.Mid_Panel = new System.Windows.Forms.Panel();
             this.AddNewGenre_ButtonINS = new System.Windows.Forms.Button();
             this.GenreName_RichTextBox = new System.Windows.Forms.RichTextBox();
@@ -117,41 +117,41 @@
             this.TopMargin_Panel.Size = new System.Drawing.Size(552, 20);
             this.TopMargin_Panel.TabIndex = 10;
             // 
-            // panel1
+            // InnerTopBorder_Panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(22, 22);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(552, 2);
-            this.panel1.TabIndex = 12;
+            this.InnerTopBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.InnerTopBorder_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.InnerTopBorder_Panel.Location = new System.Drawing.Point(22, 22);
+            this.InnerTopBorder_Panel.Name = "InnerTopBorder_Panel";
+            this.InnerTopBorder_Panel.Size = new System.Drawing.Size(552, 2);
+            this.InnerTopBorder_Panel.TabIndex = 12;
             // 
-            // panel2
+            // InnerBottomBorder_Panel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(22, 160);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(552, 2);
-            this.panel2.TabIndex = 13;
+            this.InnerBottomBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.InnerBottomBorder_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.InnerBottomBorder_Panel.Location = new System.Drawing.Point(22, 160);
+            this.InnerBottomBorder_Panel.Name = "InnerBottomBorder_Panel";
+            this.InnerBottomBorder_Panel.Size = new System.Drawing.Size(552, 2);
+            this.InnerBottomBorder_Panel.TabIndex = 13;
             // 
-            // panel3
+            // InnerRightBorder_Panel
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(572, 24);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2, 136);
-            this.panel3.TabIndex = 14;
+            this.InnerRightBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.InnerRightBorder_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.InnerRightBorder_Panel.Location = new System.Drawing.Point(572, 24);
+            this.InnerRightBorder_Panel.Name = "InnerRightBorder_Panel";
+            this.InnerRightBorder_Panel.Size = new System.Drawing.Size(2, 136);
+            this.InnerRightBorder_Panel.TabIndex = 14;
             // 
-            // panel4
+            // InnerLeftBorder_Panel
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(22, 24);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2, 136);
-            this.panel4.TabIndex = 15;
+            this.InnerLeftBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.InnerLeftBorder_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.InnerLeftBorder_Panel.Location = new System.Drawing.Point(22, 24);
+            this.InnerLeftBorder_Panel.Name = "InnerLeftBorder_Panel";
+            this.InnerLeftBorder_Panel.Size = new System.Drawing.Size(2, 136);
+            this.InnerLeftBorder_Panel.TabIndex = 15;
             // 
             // Mid_Panel
             // 
@@ -215,10 +215,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(596, 184);
             this.Controls.Add(this.Mid_Panel);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.InnerLeftBorder_Panel);
+            this.Controls.Add(this.InnerRightBorder_Panel);
+            this.Controls.Add(this.InnerBottomBorder_Panel);
+            this.Controls.Add(this.InnerTopBorder_Panel);
             this.Controls.Add(this.BottomMargin_Panel);
             this.Controls.Add(this.TopMargin_Panel);
             this.Controls.Add(this.LeftMargin_Panel);
@@ -249,10 +249,10 @@
         private Panel RightMargin_Panel;
         private Panel BottomMargin_Panel;
         private Panel TopMargin_Panel;
-        private Panel panel1;
-        private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
+        private Panel InnerTopBorder_Panel;
+        private Panel InnerBottomBorder_Panel;
+        private Panel InnerRightBorder_Panel;
+        private Panel InnerLeftBorder_Panel;
         private Panel Mid_Panel;
         private Button AddNewGenre_ButtonINS;
         private RichTextBox GenreName_RichTextBox;
