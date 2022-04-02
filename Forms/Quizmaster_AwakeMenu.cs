@@ -41,7 +41,7 @@ namespace Quizmaster.Forms
                 }
             }
 
-            // CREATE DIRECTORY IF THE DIRECTORY NOT EXISTS 
+            // CREATE DIRECTORY IF THE DIRECTORY NOT EXISTS
             if (!directoryExist)
             {
                 foreach (DriveInfo drive in allDrives)

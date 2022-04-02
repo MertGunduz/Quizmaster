@@ -245,6 +245,7 @@
             this.AddNewGenre_ButtonINS.Text = "Add New Genre";
             this.AddNewGenre_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddNewGenre_ButtonINS.UseVisualStyleBackColor = true;
+            this.AddNewGenre_ButtonINS.Click += new System.EventHandler(this.AddNewGenre_ButtonINS_Click);
             // 
             // ButtonsLeftBorder_Panel
             // 
@@ -300,6 +301,7 @@
             this.QuestionGenres_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.QuestionGenres_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.QuestionGenres_RichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuestionGenres_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
             this.QuestionGenres_RichTextBox.Location = new System.Drawing.Point(2, 50);
             this.QuestionGenres_RichTextBox.Name = "QuestionGenres_RichTextBox";
             this.QuestionGenres_RichTextBox.ReadOnly = true;
@@ -469,6 +471,7 @@
             this.Name = "Quizmaster_MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quizmaster";
+            this.Load += new System.EventHandler(this.Quizmaster_MainMenu_Load);
             this.TopMargin_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBoxINS)).EndInit();
             this.Mid_Panel.ResumeLayout(false);
