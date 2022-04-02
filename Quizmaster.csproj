@@ -9,9 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Forms\" />
     <Folder Include="Classes\" />
     <Folder Include="UserControls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Quizmaster_Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Quizmaster_Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Quizmaster_Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Quizmaster_Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

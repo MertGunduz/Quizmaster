@@ -206,20 +206,21 @@
             // Logo_PictureBox
             // 
             this.Logo_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo_PictureBox.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_Logo;
             this.Logo_PictureBox.Location = new System.Drawing.Point(50, 50);
             this.Logo_PictureBox.Name = "Logo_PictureBox";
-            this.Logo_PictureBox.Size = new System.Drawing.Size(192, 130);
-            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Logo_PictureBox.Size = new System.Drawing.Size(192, 125);
+            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Logo_PictureBox.TabIndex = 10;
             this.Logo_PictureBox.TabStop = false;
             // 
             // LogoText_PictureBox
             // 
             this.LogoText_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LogoText_PictureBox.Location = new System.Drawing.Point(50, 180);
+            this.LogoText_PictureBox.Location = new System.Drawing.Point(50, 175);
             this.LogoText_PictureBox.Name = "LogoText_PictureBox";
-            this.LogoText_PictureBox.Size = new System.Drawing.Size(192, 62);
-            this.LogoText_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.LogoText_PictureBox.Size = new System.Drawing.Size(192, 67);
+            this.LogoText_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.LogoText_PictureBox.TabIndex = 11;
             this.LogoText_PictureBox.TabStop = false;
             // 
@@ -248,7 +249,6 @@
             this.Text = "Quizmaster";
             this.Load += new System.EventHandler(this.Quizmaster_AwakeMenu_Load);
             this.InnerLogo_Panel.ResumeLayout(false);
-            this.InnerLogo_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoText_PictureBox)).EndInit();
             this.ResumeLayout(false);
