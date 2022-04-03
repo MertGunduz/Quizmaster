@@ -39,10 +39,10 @@
             this.B_ButtonINS = new System.Windows.Forms.Button();
             this.A_ButtonINS = new System.Windows.Forms.Button();
             this.SelectTrueAnswer_Label = new System.Windows.Forms.Label();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.QuestionAnswer_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.QuestionAnswerD_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.QuestionAnswerC_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.QuestionAnswerB_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.QuestionAnswerA_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.Question_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.AddNewGenre_PictureBox = new System.Windows.Forms.PictureBox();
             this.InnerLeftBorder_Panel = new System.Windows.Forms.Panel();
@@ -69,10 +69,10 @@
             this.Mid_Panel.Controls.Add(this.ImageURL_RichTextBox);
             this.Mid_Panel.Controls.Add(this.Genre_ListBox);
             this.Mid_Panel.Controls.Add(this.SelectTrueAnswer_Panel);
-            this.Mid_Panel.Controls.Add(this.richTextBox3);
-            this.Mid_Panel.Controls.Add(this.richTextBox2);
-            this.Mid_Panel.Controls.Add(this.richTextBox1);
-            this.Mid_Panel.Controls.Add(this.QuestionAnswer_RichTextBox);
+            this.Mid_Panel.Controls.Add(this.QuestionAnswerD_RichTextBox);
+            this.Mid_Panel.Controls.Add(this.QuestionAnswerC_RichTextBox);
+            this.Mid_Panel.Controls.Add(this.QuestionAnswerB_RichTextBox);
+            this.Mid_Panel.Controls.Add(this.QuestionAnswerA_RichTextBox);
             this.Mid_Panel.Controls.Add(this.Question_RichTextBox);
             this.Mid_Panel.Controls.Add(this.AddNewGenre_PictureBox);
             this.Mid_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -99,6 +99,7 @@
             this.AddImageToQuestion_ButtonINS.Text = "Add Question To System";
             this.AddImageToQuestion_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddImageToQuestion_ButtonINS.UseVisualStyleBackColor = true;
+            this.AddImageToQuestion_ButtonINS.Click += new System.EventHandler(this.AddImageToQuestion_ButtonINS_Click);
             // 
             // ImageURL_RichTextBox
             // 
@@ -111,6 +112,7 @@
             this.ImageURL_RichTextBox.Size = new System.Drawing.Size(548, 29);
             this.ImageURL_RichTextBox.TabIndex = 11;
             this.ImageURL_RichTextBox.Text = "  Image URL: ";
+            this.ImageURL_RichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ImageURL_RichTextBox_MouseClick);
             // 
             // Genre_ListBox
             // 
@@ -217,53 +219,57 @@
             this.SelectTrueAnswer_Label.Text = "Select True Answer";
             this.SelectTrueAnswer_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // richTextBox3
+            // QuestionAnswerD_RichTextBox
             // 
-            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.richTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.richTextBox3.Location = new System.Drawing.Point(0, 173);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(548, 29);
-            this.richTextBox3.TabIndex = 5;
-            this.richTextBox3.Text = "  Question Answer D:";
+            this.QuestionAnswerD_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.QuestionAnswerD_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuestionAnswerD_RichTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.QuestionAnswerD_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.QuestionAnswerD_RichTextBox.Location = new System.Drawing.Point(0, 173);
+            this.QuestionAnswerD_RichTextBox.Name = "QuestionAnswerD_RichTextBox";
+            this.QuestionAnswerD_RichTextBox.Size = new System.Drawing.Size(548, 29);
+            this.QuestionAnswerD_RichTextBox.TabIndex = 5;
+            this.QuestionAnswerD_RichTextBox.Text = "  Question Answer D:";
+            this.QuestionAnswerD_RichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.QuestionAnswerD_RichTextBox_MouseClick);
             // 
-            // richTextBox2
+            // QuestionAnswerC_RichTextBox
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.richTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.richTextBox2.Location = new System.Drawing.Point(0, 144);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(548, 29);
-            this.richTextBox2.TabIndex = 4;
-            this.richTextBox2.Text = "  Question Answer C:";
+            this.QuestionAnswerC_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.QuestionAnswerC_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuestionAnswerC_RichTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.QuestionAnswerC_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.QuestionAnswerC_RichTextBox.Location = new System.Drawing.Point(0, 144);
+            this.QuestionAnswerC_RichTextBox.Name = "QuestionAnswerC_RichTextBox";
+            this.QuestionAnswerC_RichTextBox.Size = new System.Drawing.Size(548, 29);
+            this.QuestionAnswerC_RichTextBox.TabIndex = 4;
+            this.QuestionAnswerC_RichTextBox.Text = "  Question Answer C:";
+            this.QuestionAnswerC_RichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.QuestionAnswerC_RichTextBox_MouseClick);
             // 
-            // richTextBox1
+            // QuestionAnswerB_RichTextBox
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.richTextBox1.Location = new System.Drawing.Point(0, 115);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(548, 29);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "  Question Answer B:";
+            this.QuestionAnswerB_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.QuestionAnswerB_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuestionAnswerB_RichTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.QuestionAnswerB_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.QuestionAnswerB_RichTextBox.Location = new System.Drawing.Point(0, 115);
+            this.QuestionAnswerB_RichTextBox.Name = "QuestionAnswerB_RichTextBox";
+            this.QuestionAnswerB_RichTextBox.Size = new System.Drawing.Size(548, 29);
+            this.QuestionAnswerB_RichTextBox.TabIndex = 3;
+            this.QuestionAnswerB_RichTextBox.Text = "  Question Answer B:";
+            this.QuestionAnswerB_RichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.QuestionAnswerB_RichTextBox_MouseClick);
             // 
-            // QuestionAnswer_RichTextBox
+            // QuestionAnswerA_RichTextBox
             // 
-            this.QuestionAnswer_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.QuestionAnswer_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.QuestionAnswer_RichTextBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.QuestionAnswer_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.QuestionAnswer_RichTextBox.Location = new System.Drawing.Point(0, 86);
-            this.QuestionAnswer_RichTextBox.Name = "QuestionAnswer_RichTextBox";
-            this.QuestionAnswer_RichTextBox.Size = new System.Drawing.Size(548, 29);
-            this.QuestionAnswer_RichTextBox.TabIndex = 2;
-            this.QuestionAnswer_RichTextBox.Text = "  Question Answer A:";
+            this.QuestionAnswerA_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.QuestionAnswerA_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuestionAnswerA_RichTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.QuestionAnswerA_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.QuestionAnswerA_RichTextBox.Location = new System.Drawing.Point(0, 86);
+            this.QuestionAnswerA_RichTextBox.Name = "QuestionAnswerA_RichTextBox";
+            this.QuestionAnswerA_RichTextBox.Size = new System.Drawing.Size(548, 29);
+            this.QuestionAnswerA_RichTextBox.TabIndex = 2;
+            this.QuestionAnswerA_RichTextBox.Text = "  Question Answer A:";
+            this.QuestionAnswerA_RichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.QuestionAnswerA_RichTextBox_MouseClick);
             // 
             // Question_RichTextBox
             // 
@@ -276,6 +282,7 @@
             this.Question_RichTextBox.Size = new System.Drawing.Size(548, 29);
             this.Question_RichTextBox.TabIndex = 1;
             this.Question_RichTextBox.Text = "  Question:";
+            this.Question_RichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Question_RichTextBox_MouseClick);
             // 
             // AddNewGenre_PictureBox
             // 
@@ -427,7 +434,7 @@
         #endregion
 
         private Panel Mid_Panel;
-        private RichTextBox QuestionAnswer_RichTextBox;
+        private RichTextBox QuestionAnswerA_RichTextBox;
         private RichTextBox Question_RichTextBox;
         private PictureBox AddNewGenre_PictureBox;
         private Panel InnerLeftBorder_Panel;
@@ -442,9 +449,9 @@
         private Panel RightBorder_Panel;
         private Panel BottomBorder_Panel;
         private Panel TopBorder_Panel;
-        private RichTextBox richTextBox3;
-        private RichTextBox richTextBox2;
-        private RichTextBox richTextBox1;
+        private RichTextBox QuestionAnswerD_RichTextBox;
+        private RichTextBox QuestionAnswerC_RichTextBox;
+        private RichTextBox QuestionAnswerB_RichTextBox;
         private Panel SelectTrueAnswer_Panel;
         private Button D_ButtonINS;
         private Button C_ButtonINS;
