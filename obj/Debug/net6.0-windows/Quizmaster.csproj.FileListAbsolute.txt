@@ -24,3 +24,4 @@ C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Qu
 C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_AddNewGenreMenu.resources
 C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_AddNewQuestionMenu.resources
 C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_AddNewQuestionTFMenu.resources
+C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_AddNewQuestionMA.resources
