@@ -75,14 +75,14 @@
             this.AddImageToQuestion_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddImageToQuestion_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AddImageToQuestion_ButtonINS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.AddImageToQuestion_ButtonINS.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_AddImageIcon;
+            this.AddImageToQuestion_ButtonINS.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_AddQuestionIcon;
             this.AddImageToQuestion_ButtonINS.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.AddImageToQuestion_ButtonINS.Location = new System.Drawing.Point(0, 270);
             this.AddImageToQuestion_ButtonINS.Name = "AddImageToQuestion_ButtonINS";
             this.AddImageToQuestion_ButtonINS.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.AddImageToQuestion_ButtonINS.Size = new System.Drawing.Size(548, 50);
             this.AddImageToQuestion_ButtonINS.TabIndex = 9;
-            this.AddImageToQuestion_ButtonINS.Text = "Add Image To Question";
+            this.AddImageToQuestion_ButtonINS.Text = "Add Question To System";
             this.AddImageToQuestion_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddImageToQuestion_ButtonINS.UseVisualStyleBackColor = true;
             this.AddImageToQuestion_ButtonINS.Click += new System.EventHandler(this.AddImageToQuestion_ButtonINS_Click);

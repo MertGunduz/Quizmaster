@@ -145,6 +145,9 @@
   <data name="Quizmaster_AddNewTextQuestionText" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Quizmaster_AddNewTextQuestionText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Quizmaster_AddQuestionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Quizmaster_AddQuestionIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Quizmaster_ExitIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Quizmaster_ExitIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

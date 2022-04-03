@@ -89,14 +89,14 @@
             this.AddImageToQuestion_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddImageToQuestion_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AddImageToQuestion_ButtonINS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.AddImageToQuestion_ButtonINS.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_AddImageIcon;
+            this.AddImageToQuestion_ButtonINS.Image = global::Quizmaster.Quizmaster_Resources.Quizmaster_AddQuestionIcon;
             this.AddImageToQuestion_ButtonINS.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.AddImageToQuestion_ButtonINS.Location = new System.Drawing.Point(0, 433);
             this.AddImageToQuestion_ButtonINS.Name = "AddImageToQuestion_ButtonINS";
             this.AddImageToQuestion_ButtonINS.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.AddImageToQuestion_ButtonINS.Size = new System.Drawing.Size(548, 50);
             this.AddImageToQuestion_ButtonINS.TabIndex = 12;
-            this.AddImageToQuestion_ButtonINS.Text = "Add Image To Question";
+            this.AddImageToQuestion_ButtonINS.Text = "Add Question To System";
             this.AddImageToQuestion_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddImageToQuestion_ButtonINS.UseVisualStyleBackColor = true;
             // 
@@ -153,6 +153,7 @@
             this.D_ButtonINS.TabIndex = 4;
             this.D_ButtonINS.Text = "D Answer";
             this.D_ButtonINS.UseVisualStyleBackColor = false;
+            this.D_ButtonINS.Click += new System.EventHandler(this.D_ButtonINS_Click);
             // 
             // C_ButtonINS
             // 
@@ -169,6 +170,7 @@
             this.C_ButtonINS.TabIndex = 3;
             this.C_ButtonINS.Text = "C Answer";
             this.C_ButtonINS.UseVisualStyleBackColor = false;
+            this.C_ButtonINS.Click += new System.EventHandler(this.C_ButtonINS_Click);
             // 
             // B_ButtonINS
             // 
@@ -185,6 +187,7 @@
             this.B_ButtonINS.TabIndex = 2;
             this.B_ButtonINS.Text = "B Answer";
             this.B_ButtonINS.UseVisualStyleBackColor = false;
+            this.B_ButtonINS.Click += new System.EventHandler(this.B_ButtonINS_Click);
             // 
             // A_ButtonINS
             // 
@@ -201,6 +204,7 @@
             this.A_ButtonINS.TabIndex = 1;
             this.A_ButtonINS.Text = "A Answer";
             this.A_ButtonINS.UseVisualStyleBackColor = false;
+            this.A_ButtonINS.Click += new System.EventHandler(this.A_ButtonINS_Click);
             // 
             // SelectTrueAnswer_Label
             // 

@@ -41,5 +41,25 @@ namespace Quizmaster.Forms
                 Genre_ListBox.Items.Add(genresList[i]);
             }
         }
+
+        private void A_ButtonINS_Click(object sender, EventArgs e)
+        {
+            trueAnswer = "A";
+        }
+
+        private void B_ButtonINS_Click(object sender, EventArgs e)
+        {
+            trueAnswer = "B";
+        }
+
+        private void C_ButtonINS_Click(object sender, EventArgs e)
+        {
+            trueAnswer = "C";
+        }
+
+        private void D_ButtonINS_Click(object sender, EventArgs e)
+        {
+            trueAnswer = "D";
+        }
     }
 }

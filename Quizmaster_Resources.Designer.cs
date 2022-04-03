@@ -153,6 +153,16 @@ namespace Quizmaster {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Quizmaster_AddQuestionIcon {
+            get {
+                object obj = ResourceManager.GetObject("Quizmaster_AddQuestionIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Quizmaster_ExitIcon {
             get {
                 object obj = ResourceManager.GetObject("Quizmaster_ExitIcon", resourceCulture);
