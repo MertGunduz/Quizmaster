@@ -61,11 +61,11 @@ namespace Quizmaster.Forms
             {
                 if (ImageURL_RichTextBox.Text == "" || ImageURL_RichTextBox.Text == " " || ImageURL_RichTextBox.Text == "  Image URL: ")
                 {
-                    File.AppendAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\Questions.txt", question + ":" + questionAnswer + ":" + "TF" + ":" + "IMG_NOT_INCLUDED" + Environment.NewLine);
+                    File.AppendAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\Questions.txt", question + ":" + questionAnswer + ":" + questionCategory + ":" + "TF" + ":" + "IMG_NOT_INCLUDED" + Environment.NewLine);
                 }
                 else
                 {
-                    File.AppendAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\Questions.txt", question + ":" + questionAnswer + ":" + "TF" + ":"+ "IMG_INCLUDED" + ":" + imageName + Environment.NewLine);
+                    File.AppendAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\Questions.txt", question + ":" + questionAnswer + ":" + questionCategory + ":" + "TF" + ":"+ "IMG_INCLUDED" + ":" + imageName + Environment.NewLine);
                 }
 
                 // OPENS THE MAIN MENU (Quizmaster_MainMenu.cs)
