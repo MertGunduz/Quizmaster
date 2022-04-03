@@ -53,7 +53,7 @@ namespace Quizmaster.Forms
 
         private void AddNewQuestion_ButtonINS_Click(object sender, EventArgs e)
         {
-            // OPENS ADD GENRE MENU (Quizmaster_AddNewQuestionMenu.cs)
+            // OPENS ADD QUESTION MENU (Quizmaster_AddNewQuestionMenu.cs)
             Quizmaster_AddNewQuestionMenu quizmaster_AddNewQuestionMenu = new Quizmaster_AddNewQuestionMenu();
             this.Dispose();
             quizmaster_AddNewQuestionMenu.Show();

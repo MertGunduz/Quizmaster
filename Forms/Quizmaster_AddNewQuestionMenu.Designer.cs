@@ -74,6 +74,7 @@
             this.MultipleAnswer_ButtonINS.Size = new System.Drawing.Size(274, 72);
             this.MultipleAnswer_ButtonINS.TabIndex = 2;
             this.MultipleAnswer_ButtonINS.UseVisualStyleBackColor = true;
+            this.MultipleAnswer_ButtonINS.Click += new System.EventHandler(this.MultipleAnswer_ButtonINS_Click);
             // 
             // FillInTheBlank_ButtonINS
             // 
@@ -88,6 +89,7 @@
             this.FillInTheBlank_ButtonINS.Size = new System.Drawing.Size(274, 72);
             this.FillInTheBlank_ButtonINS.TabIndex = 1;
             this.FillInTheBlank_ButtonINS.UseVisualStyleBackColor = true;
+            this.FillInTheBlank_ButtonINS.Click += new System.EventHandler(this.FillInTheBlank_ButtonINS_Click);
             // 
             // AddNewGenre_PictureBox
             // 

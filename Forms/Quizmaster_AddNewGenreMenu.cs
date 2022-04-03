@@ -19,7 +19,7 @@ namespace Quizmaster.Forms
 
         private void AddNewGenre_ButtonINS_Click(object sender, EventArgs e)
         {
-            if (GenreName_RichTextBox.Text != "" || GenreName_RichTextBox.Text != " " || GenreName_RichTextBox.Text != string.Empty)
+            if (GenreName_RichTextBox.Text != "" || GenreName_RichTextBox.Text != " ")
             {
                 // ADD GENRE
                 File.AppendAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\Genres.txt", GenreName_RichTextBox.Text.ToString() + Environment.NewLine);

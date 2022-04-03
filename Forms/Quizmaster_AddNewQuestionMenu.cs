@@ -16,5 +16,18 @@ namespace Quizmaster.Forms
         {
             InitializeComponent();
         }
+
+        private void FillInTheBlank_ButtonINS_Click(object sender, EventArgs e)
+        {
+            // OPENS MULTIPLE ANSWER QUESTION MENU (Quizmaster_AddNewQuestionTFMenu.cs)
+            Quizmaster_AddNewQuestionTFMenu quizmaster_AddNewQuestionTFMenu = new Quizmaster_AddNewQuestionTFMenu();
+            this.Dispose();
+            quizmaster_AddNewQuestionTFMenu.Show();
+        }
+
+        private void MultipleAnswer_ButtonINS_Click(object sender, EventArgs e)
+        {
+            // OPENS MULTIPLE ANSWER QUESTION MENU (Quizmaster_AddNewQuestionMenu.cs)
+        }
     }
 }
