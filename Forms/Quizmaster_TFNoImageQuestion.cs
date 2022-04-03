@@ -74,6 +74,8 @@ namespace Quizmaster.Forms
 
         private void SubmitAnswer_ButtonINS_Click(object sender, EventArgs e)
         {
+            Classes.Configuration.questionCount++;
+
             if (userQuestionAnswer == questionAnswer)
             {
                 Classes.Configuration.trueAnswers++;
@@ -83,7 +85,7 @@ namespace Quizmaster.Forms
                 Classes.Configuration.falseAnswers++;
             }
 
-            if (Classes.Configuration.questionCount == Classes.Configuration.totalQuestions)
+            if (Classes.Configuration.questionCount == 10)
             {
                 MessageBox.Show($"Finished!\n\nTrue Answers: {Classes.Configuration.trueAnswers}\n\nFalse Answers:{Classes.Configuration.falseAnswers}", $"Congratulations {Classes.Configuration.trueAnswers}TRUE/{Classes.Configuration.falseAnswers}FALSE", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

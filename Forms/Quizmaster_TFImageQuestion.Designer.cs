@@ -172,6 +172,7 @@
             this.SubmitAnswer_ButtonINS.Text = "Submit Answer";
             this.SubmitAnswer_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SubmitAnswer_ButtonINS.UseVisualStyleBackColor = false;
+            this.SubmitAnswer_ButtonINS.Click += new System.EventHandler(this.SubmitAnswer_ButtonINS_Click);
             // 
             // AnswerRichTextBox
             // 
@@ -184,6 +185,7 @@
             this.AnswerRichTextBox.Size = new System.Drawing.Size(477, 42);
             this.AnswerRichTextBox.TabIndex = 36;
             this.AnswerRichTextBox.Text = "  Answer:";
+            this.AnswerRichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AnswerRichTextBox_MouseClick);
             // 
             // Question_RichTextBox
             // 

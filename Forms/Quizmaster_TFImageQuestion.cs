@@ -103,5 +103,41 @@ namespace Quizmaster.Forms
             Question_RichTextBox.Text = question;
             QuestionImage_PictureBox.Image = bitmap;
         }
+
+        private void SubmitAnswer_ButtonINS_Click(object sender, EventArgs e)
+        {
+            if (userQuestionAnswer == questionAnswer)
+            {
+                Classes.Configuration.trueAnswers++;
+            }
+            else
+            {
+                Classes.Configuration.falseAnswers++;
+            }
+
+            if (Classes.Configuration.questionCount == 10)
+            {
+                MessageBox.Show($"Finished!\n\nTrue Answers: {Classes.Configuration.trueAnswers}\n\nFalse Answers:{Classes.Configuration.falseAnswers}", $"Congratulations {Classes.Configuration.trueAnswers}TRUE/{Classes.Configuration.falseAnswers}FALSE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Quizmaster_MainMenu quizmaster_MainMenu = new Quizmaster_MainMenu();
+                this.Dispose();
+                quizmaster_MainMenu.Show();
+            }
+            else
+            {
+                // Opens New Menu
+                Quizmaster_TFNoImageQuestion quizmaster_TFImageQuestion = new Quizmaster_TFNoImageQuestion();
+                this.Dispose();
+                quizmaster_TFImageQuestion.Show();
+            }
+        }
+
+        private void AnswerRichTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (AnswerRichTextBox.Text == "  Answer:")
+            {
+                AnswerRichTextBox.Clear();
+            }
+        }
     }
 }
