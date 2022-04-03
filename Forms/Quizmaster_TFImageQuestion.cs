@@ -139,5 +139,15 @@ namespace Quizmaster.Forms
                 AnswerRichTextBox.Clear();
             }
         }
+
+        private void Minimize_PictureBoxINS_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void Exit_PictureBoxINS_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

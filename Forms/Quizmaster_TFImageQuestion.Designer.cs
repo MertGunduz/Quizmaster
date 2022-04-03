@@ -61,6 +61,7 @@
             this.Exit_PictureBoxINS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Exit_PictureBoxINS.TabIndex = 0;
             this.Exit_PictureBoxINS.TabStop = false;
+            this.Exit_PictureBoxINS.Click += new System.EventHandler(this.Exit_PictureBoxINS_Click);
             // 
             // BottomMargin_Panel
             // 
@@ -90,6 +91,7 @@
             this.Minimize_PictureBoxINS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Minimize_PictureBoxINS.TabIndex = 1;
             this.Minimize_PictureBoxINS.TabStop = false;
+            this.Minimize_PictureBoxINS.Click += new System.EventHandler(this.Minimize_PictureBoxINS_Click);
             // 
             // LeftMargin_Panel
             // 
