@@ -61,7 +61,7 @@ namespace Quizmaster.Forms
 
         private void StartQuiz_ButtonINS_Click(object sender, EventArgs e)
         {
-            Quizmaster_TFNoImageQuestion quizmaster_TFNoImageQuestion = new Quizmaster_TFNoImageQuestion();
+            Quizmaster_TFImageQuestion quizmaster_TFNoImageQuestion = new Quizmaster_TFImageQuestion();
             this.Dispose();
             quizmaster_TFNoImageQuestion.Show();
         }

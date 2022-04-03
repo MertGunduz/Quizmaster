@@ -12,9 +12,96 @@ namespace Quizmaster.Forms
 {
     public partial class Quizmaster_TFImageQuestion : Form
     {
+        // BULK STRING TAKER
+        string questionTEXT = string.Empty;
+
+        // SYSTEM STRINGS
+        string validLine = string.Empty;
+        int validLineLine = 0;
+        string question = string.Empty;
+        string questionAnswer = string.Empty;
+        string questionGenre = string.Empty;
+        string questionType = string.Empty;
+        string questionImageType = string.Empty;
+        string imagePath = string.Empty;
+
+        // INPUT
+        string userQuestionAnswer;
+
         public Quizmaster_TFImageQuestion()
         {
             InitializeComponent();
+        }
+
+        private void Quizmaster_TFImageQuestion_Load(object sender, EventArgs e)
+        {
+            Classes.Configuration.questionCount++;
+
+            for (int i = 0; i < File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length; i++)
+            {
+                questionTEXT = File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt")[i].ToString();
+
+                if (questionTEXT.Contains("TF") && questionTEXT.Contains("IMG_INCLUDED"))
+                {
+                    validLine = questionTEXT;
+                    validLineLine = i;
+                    break;
+                }
+            }
+
+            int s = 0;
+            while (validLine[s].ToString() != ":")
+            {
+                question += validLine[s];
+                s++;
+            }
+
+            s++;
+
+            while (validLine[s].ToString() != ":")
+            {
+                questionAnswer += validLine[s];
+                s++;
+            }
+
+            s++;
+
+            while (validLine[s].ToString() != ":")
+            {
+                questionGenre += validLine[s];
+                s++;
+            }
+
+            s++; 
+
+            while (validLine[s].ToString() != ":")
+            {
+                questionType += validLine[s];
+                s++;
+            }
+
+            s++;
+
+            while (validLine[s].ToString() != ":")
+            {
+                questionImageType += validLine[s];
+                s++;
+            }
+
+            s++;
+
+            while (validLine[s].ToString() != "" && s < validLine.Length - 1)
+            {
+                imagePath += validLine[s];
+                s++;
+            }
+
+            imagePath += "g";
+
+            Bitmap bitmap = new Bitmap(Classes.Configuration.drivePath + "Quizmaster\\Images\\" + imagePath);
+
+            Question_RichTextBox.Text = question;
+            QuestionImage_PictureBox.Image = bitmap;
         }
     }
 }
