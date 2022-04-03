@@ -15,7 +15,11 @@ namespace Quizmaster.Forms
         // VARIABLES
         List<string> genresList = new List<string>();
         string question = string.Empty;
-        string questionAnswer = string.Empty;
+        string questionAnswerA = string.Empty;
+        string questionAnswerB = string.Empty;
+        string questionAnswerC = string.Empty;
+        string questionAnswerD = string.Empty;
+        string trueAnswer = string.Empty;
         string questionCategory = string.Empty;
         string imageName = string.Empty;
 
