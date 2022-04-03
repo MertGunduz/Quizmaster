@@ -25,6 +25,8 @@ namespace Quizmaster.Forms
         // INPUT
         string userQuestionAnswer;
 
+        Random random = new Random();
+
         public Quizmaster_TFNoImageQuestion()
         {
             InitializeComponent();
@@ -36,7 +38,7 @@ namespace Quizmaster.Forms
 
             for (int i = 0; i < File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length; i++)
             {
-                questionTEXT = File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt")[i].ToString();
+                questionTEXT = File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt")[random.Next(0, File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length - 1)].ToString();
 
                 if (questionTEXT.Contains("TF") && questionTEXT.Contains("IMG_NOT_INCLUDED"))
                 {
@@ -110,6 +112,14 @@ namespace Quizmaster.Forms
         private void Exit_PictureBoxINS_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void AnswerRichTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (AnswerRichTextBox.Text == "  Answer:")
+            {
+                AnswerRichTextBox.Clear();
+            }
         }
     }
 }

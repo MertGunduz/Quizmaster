@@ -167,6 +167,7 @@
             this.AnswerRichTextBox.Size = new System.Drawing.Size(477, 42);
             this.AnswerRichTextBox.TabIndex = 24;
             this.AnswerRichTextBox.Text = "  Answer:";
+            this.AnswerRichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AnswerRichTextBox_MouseClick);
             // 
             // SubmitAnswer_ButtonINS
             // 

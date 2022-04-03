@@ -28,6 +28,8 @@ namespace Quizmaster.Forms
         // INPUT
         string userQuestionAnswer;
 
+        Random random = new Random();
+
         public Quizmaster_TFImageQuestion()
         {
             InitializeComponent();
@@ -39,7 +41,7 @@ namespace Quizmaster.Forms
 
             for (int i = 0; i < File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length; i++)
             {
-                questionTEXT = File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt")[i].ToString();
+                questionTEXT = File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt")[random.Next(0, File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length - 1)].ToString();
 
                 if (questionTEXT.Contains("TF") && questionTEXT.Contains("IMG_INCLUDED"))
                 {
