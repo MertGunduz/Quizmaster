@@ -27,7 +27,10 @@ namespace Quizmaster.Forms
 
         private void MultipleAnswer_ButtonINS_Click(object sender, EventArgs e)
         {
-            // OPENS MULTIPLE ANSWER QUESTION MENU (Quizmaster_AddNewQuestionMenu.cs)
+            // OPENS MULTIPLE ANSWER QUESTION MENU (Quizmaster_AddNewQuestionMAMenu.cs)
+            Quizmaster_AddNewQuestionMA quizmaster_AddNewQuestionMA = new Quizmaster_AddNewQuestionMA();
+            this.Dispose();
+            quizmaster_AddNewQuestionMA.Show();
         }
     }
 }
