@@ -58,5 +58,12 @@ namespace Quizmaster.Forms
             this.Dispose();
             quizmaster_AddNewQuestionMenu.Show();
         }
+
+        private void StartQuiz_ButtonINS_Click(object sender, EventArgs e)
+        {
+            Quizmaster_TFNoImageQuestion quizmaster_TFNoImageQuestion = new Quizmaster_TFNoImageQuestion();
+            this.Dispose();
+            quizmaster_TFNoImageQuestion.Show();
+        }
     }
 }

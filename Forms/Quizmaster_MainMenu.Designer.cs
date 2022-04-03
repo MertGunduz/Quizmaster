@@ -207,6 +207,7 @@
             this.StartQuiz_ButtonINS.Text = "Start Quiz";
             this.StartQuiz_ButtonINS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.StartQuiz_ButtonINS.UseVisualStyleBackColor = true;
+            this.StartQuiz_ButtonINS.Click += new System.EventHandler(this.StartQuiz_ButtonINS_Click);
             // 
             // AddNewQuestion_ButtonINS
             // 

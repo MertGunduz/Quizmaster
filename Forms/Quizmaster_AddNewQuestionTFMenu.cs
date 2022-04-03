@@ -49,7 +49,7 @@ namespace Quizmaster.Forms
             questionAnswer = QuestionAnswer_RichTextBox.Text;
             questionCategory = Genre_ListBox.Items[Genre_ListBox.SelectedIndex].ToString();
 
-            if (ImageURL_RichTextBox.Text != " " && ImageURL_RichTextBox.Text != "")
+            if (ImageURL_RichTextBox.Text != " " && ImageURL_RichTextBox.Text != "" && ImageURL_RichTextBox.Text != "  Image URL: ")
             {
                 imageName = LowerCase_Array[random.Next(0, LowerCase_Array.Length - 1)].ToString() + LowerCase_Array[random.Next(0, LowerCase_Array.Length - 1)].ToString() + LowerCase_Array[random.Next(0, LowerCase_Array.Length - 1)].ToString() + LowerCase_Array[random.Next(0, LowerCase_Array.Length - 1)].ToString() + UpperCase_Array[random.Next(0, UpperCase_Array.Length - 1)].ToString() + UpperCase_Array[random.Next(0, UpperCase_Array.Length - 1)].ToString() + UpperCase_Array[random.Next(0, UpperCase_Array.Length - 1)].ToString() + UpperCase_Array[random.Next(0, UpperCase_Array.Length - 1)].ToString() + UpperCase_Array[random.Next(0, UpperCase_Array.Length - 1)].ToString() + Numbers_Array[random.Next(0, Numbers_Array.Length - 1)].ToString() + ".png";
 
