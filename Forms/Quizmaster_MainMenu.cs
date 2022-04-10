@@ -53,17 +53,31 @@ namespace Quizmaster.Forms
 
         private void AddNewQuestion_ButtonINS_Click(object sender, EventArgs e)
         {
-            // OPENS ADD QUESTION MENU (Quizmaster_AddNewQuestionMenu.cs)
-            Quizmaster_AddNewQuestionMenu quizmaster_AddNewQuestionMenu = new Quizmaster_AddNewQuestionMenu();
-            this.Dispose();
-            quizmaster_AddNewQuestionMenu.Show();
+            if (QuestionGenres_RichTextBox.Text != "")
+            {
+                // OPENS ADD QUESTION MENU (Quizmaster_AddNewQuestionMenu.cs)
+                Quizmaster_AddNewQuestionMenu quizmaster_AddNewQuestionMenu = new Quizmaster_AddNewQuestionMenu();
+                this.Dispose();
+                quizmaster_AddNewQuestionMenu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please Add Categories To The System!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void StartQuiz_ButtonINS_Click(object sender, EventArgs e)
         {
-            Quizmaster_TFImageQuestion quizmaster_TFNoImageQuestion = new Quizmaster_TFImageQuestion();
-            this.Dispose();
-            quizmaster_TFNoImageQuestion.Show();
+            if (QuestionGenres_RichTextBox.Text != "")
+            {
+                Quizmaster_TFImageQuestion quizmaster_TFNoImageQuestion = new Quizmaster_TFImageQuestion();
+                this.Dispose();
+                quizmaster_TFNoImageQuestion.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please Add Categories & Questions To The System!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
