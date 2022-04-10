@@ -17,7 +17,6 @@ namespace Quizmaster.Forms
 
         // SYSTEM STRINGS
         string validLine = string.Empty;
-        int validLineLine = 0;
         string question = string.Empty;
         string questionAnswer = string.Empty;
         string questionGenre = string.Empty;
@@ -36,14 +35,13 @@ namespace Quizmaster.Forms
         {
             Classes.Configuration.questionCount++;
 
-            for (int i = 0; i < File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length; i++)
+            while (true)
             {
                 questionTEXT = File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt")[random.Next(0, File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length - 1)].ToString();
 
                 if (questionTEXT.Contains("TF") && questionTEXT.Contains("IMG_NOT_INCLUDED"))
                 {
                     validLine = questionTEXT;
-                    validLineLine = i;
                     break;
                 }
             }

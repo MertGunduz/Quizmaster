@@ -39,14 +39,13 @@ namespace Quizmaster.Forms
         {
             Classes.Configuration.questionCount++;
 
-            for (int i = 0; i < File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length; i++)
+            while (true)
             {
                 questionTEXT = File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt")[random.Next(0, File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length)].ToString();
 
                 if (questionTEXT.Contains("TF") && questionTEXT.Contains("IMG_INCLUDED"))
                 {
                     validLine = questionTEXT;
-                    validLineLine = i;
                     break;
                 }
             }
