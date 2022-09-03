@@ -96,10 +96,16 @@ namespace Quizmaster.Forms
                     if (MAQuestionsFile.Contains("IMG_INCLUDED"))
                     {
                         // SHOW THE FIRST MA QUESTION WITH IMAGE INCLUDED
+                        Quizmaster_MAImageQuestion quizmaster_MAImageQuestion = new Quizmaster_MAImageQuestion();
+                        this.Dispose();
+                        quizmaster_MAImageQuestion.Show();
                     }
                     else if (MAQuestionsFile.Contains("IMG_NOT_INCLUDED"))
                     {
                         // SHOW THE FIRST MA QUESTION WITH IMAGE NOT INCLUDED
+                        Quizmaster_MANoImageQuestion quizmaster_MANoImageQuestion = new Quizmaster_MANoImageQuestion();
+                        this.Dispose();
+                        quizmaster_MANoImageQuestion.Show();
                     }
                 }
                 else
