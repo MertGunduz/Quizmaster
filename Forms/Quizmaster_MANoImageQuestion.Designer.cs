@@ -171,6 +171,7 @@
             this.D_ButtonINS.TabIndex = 57;
             this.D_ButtonINS.Text = "D Answer";
             this.D_ButtonINS.UseVisualStyleBackColor = false;
+            this.D_ButtonINS.Click += new System.EventHandler(this.D_ButtonINS_Click);
             // 
             // C_ButtonINS
             // 
@@ -187,6 +188,7 @@
             this.C_ButtonINS.TabIndex = 56;
             this.C_ButtonINS.Text = "C Answer";
             this.C_ButtonINS.UseVisualStyleBackColor = false;
+            this.C_ButtonINS.Click += new System.EventHandler(this.C_ButtonINS_Click);
             // 
             // B_ButtonINS
             // 
@@ -203,6 +205,7 @@
             this.B_ButtonINS.TabIndex = 55;
             this.B_ButtonINS.Text = "B Answer";
             this.B_ButtonINS.UseVisualStyleBackColor = false;
+            this.B_ButtonINS.Click += new System.EventHandler(this.B_ButtonINS_Click);
             // 
             // A_ButtonINS
             // 
@@ -219,6 +222,7 @@
             this.A_ButtonINS.TabIndex = 54;
             this.A_ButtonINS.Text = "A Answer";
             this.A_ButtonINS.UseVisualStyleBackColor = false;
+            this.A_ButtonINS.Click += new System.EventHandler(this.A_ButtonINS_Click);
             // 
             // Quizmaster_MANoImageQuestion
             // 
@@ -244,6 +248,7 @@
             this.Name = "Quizmaster_MANoImageQuestion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quizmaster_MANoImageQuestion";
+            this.Load += new System.EventHandler(this.Quizmaster_MANoImageQuestion_Load);
             this.RightMargin_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBoxINS)).EndInit();
             this.TopMargin_Panel.ResumeLayout(false);

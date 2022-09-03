@@ -39,8 +39,6 @@ namespace Quizmaster.Forms
 
         private void Quizmaster_MAImageQuestion_Load(object sender, EventArgs e)
         {
-            Classes.Configuration.questionCount++;
-
             while (true)
             {
                 questionTEXT = File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\MAQuestions.txt")[random.Next(0, File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\MAQuestions.txt").Length)].ToString();
