@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -62,7 +63,7 @@ namespace Quizmaster.Forms
             }
             else
             {
-                MessageBox.Show("Please Add Categories To The System!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please add categories to the system!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -70,13 +71,45 @@ namespace Quizmaster.Forms
         {
             if (QuestionGenres_RichTextBox.Text != "")
             {
-                Quizmaster_TFImageQuestion quizmaster_TFNoImageQuestion = new Quizmaster_TFImageQuestion();
-                this.Dispose();
-                quizmaster_TFNoImageQuestion.Show();
+                string TFQuestionsFile = File.ReadAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\TFQuestions.txt");
+                string MAQuestionsFile = File.ReadAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\MAQuestions.txt");
+
+                if (TFQuestionsFile != "" && TFQuestionsFile != " ")
+                {
+                    if (TFQuestionsFile.Contains("IMG_INCLUDED"))
+                    {
+                        // SHOW THE FIRST TF QUESTION WITH IMAGE INCLUDED
+                        Quizmaster_TFImageQuestion quizmaster_TFImageQuestion = new Quizmaster_TFImageQuestion();
+                        this.Dispose();
+                        quizmaster_TFImageQuestion.Show();
+                    }
+                    else if (TFQuestionsFile.Contains("IMG_NOT_INCLUDED"))
+                    {
+                        // SHOW THE FIRST TF QUESTION WITH IMAGE NOT INCLUDED
+                        Quizmaster_TFNoImageQuestion quizmaster_TFNoImageQuestion = new Quizmaster_TFNoImageQuestion();
+                        this.Dispose();
+                        quizmaster_TFNoImageQuestion.Show();
+                    }
+                }
+                else if (MAQuestionsFile != "" && MAQuestionsFile != " ")
+                {
+                    if (MAQuestionsFile.Contains("IMG_INCLUDED"))
+                    {
+                        // SHOW THE FIRST MA QUESTION WITH IMAGE INCLUDED
+                    }
+                    else if (MAQuestionsFile.Contains("IMG_NOT_INCLUDED"))
+                    {
+                        // SHOW THE FIRST MA QUESTION WITH IMAGE NOT INCLUDED
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please add questions to the system!\n\nThere are no questions in the system!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Please Add Categories & Questions To The System!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please add categories and questions to the system!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
