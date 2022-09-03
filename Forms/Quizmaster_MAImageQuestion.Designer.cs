@@ -41,7 +41,6 @@
             this.Minimize_PictureBoxINS = new System.Windows.Forms.PictureBox();
             this.QuestionImage_PictureBox = new System.Windows.Forms.PictureBox();
             this.Question_RichTextBox = new System.Windows.Forms.RichTextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.D_ButtonINS = new System.Windows.Forms.Button();
             this.C_ButtonINS = new System.Windows.Forms.Button();
             this.B_ButtonINS = new System.Windows.Forms.Button();
@@ -59,7 +58,7 @@
             this.LeftBorder_Panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftBorder_Panel.Location = new System.Drawing.Point(0, 0);
             this.LeftBorder_Panel.Name = "LeftBorder_Panel";
-            this.LeftBorder_Panel.Size = new System.Drawing.Size(2, 587);
+            this.LeftBorder_Panel.Size = new System.Drawing.Size(2, 585);
             this.LeftBorder_Panel.TabIndex = 29;
             // 
             // RightBorder_Panel
@@ -68,14 +67,14 @@
             this.RightBorder_Panel.Dock = System.Windows.Forms.DockStyle.Right;
             this.RightBorder_Panel.Location = new System.Drawing.Point(539, 0);
             this.RightBorder_Panel.Name = "RightBorder_Panel";
-            this.RightBorder_Panel.Size = new System.Drawing.Size(2, 587);
+            this.RightBorder_Panel.Size = new System.Drawing.Size(2, 585);
             this.RightBorder_Panel.TabIndex = 28;
             // 
             // BottomBorder_Panel
             // 
             this.BottomBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
             this.BottomBorder_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BottomBorder_Panel.Location = new System.Drawing.Point(2, 585);
+            this.BottomBorder_Panel.Location = new System.Drawing.Point(2, 583);
             this.BottomBorder_Panel.Name = "BottomBorder_Panel";
             this.BottomBorder_Panel.Size = new System.Drawing.Size(537, 2);
             this.BottomBorder_Panel.TabIndex = 31;
@@ -94,7 +93,7 @@
             this.LeftMargin_Panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftMargin_Panel.Location = new System.Drawing.Point(2, 2);
             this.LeftMargin_Panel.Name = "LeftMargin_Panel";
-            this.LeftMargin_Panel.Size = new System.Drawing.Size(30, 583);
+            this.LeftMargin_Panel.Size = new System.Drawing.Size(30, 581);
             this.LeftMargin_Panel.TabIndex = 33;
             // 
             // RightMargin_Panel
@@ -103,7 +102,7 @@
             this.RightMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
             this.RightMargin_Panel.Location = new System.Drawing.Point(509, 2);
             this.RightMargin_Panel.Name = "RightMargin_Panel";
-            this.RightMargin_Panel.Size = new System.Drawing.Size(30, 583);
+            this.RightMargin_Panel.Size = new System.Drawing.Size(30, 581);
             this.RightMargin_Panel.TabIndex = 32;
             // 
             // Exit_PictureBoxINS
@@ -121,7 +120,7 @@
             // BottomMargin_Panel
             // 
             this.BottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BottomMargin_Panel.Location = new System.Drawing.Point(32, 555);
+            this.BottomMargin_Panel.Location = new System.Drawing.Point(32, 553);
             this.BottomMargin_Panel.Name = "BottomMargin_Panel";
             this.BottomMargin_Panel.Size = new System.Drawing.Size(477, 30);
             this.BottomMargin_Panel.TabIndex = 35;
@@ -169,15 +168,6 @@
             this.Question_RichTextBox.TabIndex = 37;
             this.Question_RichTextBox.Text = "  Question:";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(32, 502);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(477, 2);
-            this.panel1.TabIndex = 38;
-            // 
             // D_ButtonINS
             // 
             this.D_ButtonINS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
@@ -187,7 +177,7 @@
             this.D_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.D_ButtonINS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.D_ButtonINS.Location = new System.Drawing.Point(389, 504);
+            this.D_ButtonINS.Location = new System.Drawing.Point(389, 502);
             this.D_ButtonINS.Name = "D_ButtonINS";
             this.D_ButtonINS.Size = new System.Drawing.Size(119, 51);
             this.D_ButtonINS.TabIndex = 53;
@@ -203,7 +193,7 @@
             this.C_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.C_ButtonINS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.C_ButtonINS.Location = new System.Drawing.Point(270, 504);
+            this.C_ButtonINS.Location = new System.Drawing.Point(270, 502);
             this.C_ButtonINS.Name = "C_ButtonINS";
             this.C_ButtonINS.Size = new System.Drawing.Size(119, 51);
             this.C_ButtonINS.TabIndex = 52;
@@ -219,7 +209,7 @@
             this.B_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.B_ButtonINS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.B_ButtonINS.Location = new System.Drawing.Point(151, 504);
+            this.B_ButtonINS.Location = new System.Drawing.Point(151, 502);
             this.B_ButtonINS.Name = "B_ButtonINS";
             this.B_ButtonINS.Size = new System.Drawing.Size(119, 51);
             this.B_ButtonINS.TabIndex = 51;
@@ -235,7 +225,7 @@
             this.A_ButtonINS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A_ButtonINS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.A_ButtonINS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.A_ButtonINS.Location = new System.Drawing.Point(32, 504);
+            this.A_ButtonINS.Location = new System.Drawing.Point(32, 502);
             this.A_ButtonINS.Name = "A_ButtonINS";
             this.A_ButtonINS.Size = new System.Drawing.Size(119, 51);
             this.A_ButtonINS.TabIndex = 50;
@@ -246,12 +236,11 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(541, 587);
+            this.ClientSize = new System.Drawing.Size(541, 585);
             this.Controls.Add(this.D_ButtonINS);
             this.Controls.Add(this.C_ButtonINS);
             this.Controls.Add(this.B_ButtonINS);
             this.Controls.Add(this.A_ButtonINS);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Question_RichTextBox);
             this.Controls.Add(this.QuestionImage_PictureBox);
             this.Controls.Add(this.BottomMargin_Panel);
@@ -291,7 +280,6 @@
         private PictureBox Minimize_PictureBoxINS;
         private PictureBox QuestionImage_PictureBox;
         private RichTextBox Question_RichTextBox;
-        private Panel panel1;
         private Button D_ButtonINS;
         private Button C_ButtonINS;
         private Button B_ButtonINS;

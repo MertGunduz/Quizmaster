@@ -126,10 +126,7 @@ namespace Quizmaster.Forms
             }
             else
             {
-                // Opens New Menu
-                Quizmaster_TFNoImageQuestion quizmaster_TFImageQuestion = new Quizmaster_TFNoImageQuestion();
-                this.Dispose();
-                quizmaster_TFImageQuestion.Show();
+                QuestionSelector();
             }
         }
 
@@ -149,6 +146,73 @@ namespace Quizmaster.Forms
         private void Exit_PictureBoxINS_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void QuestionSelector()
+        {
+            // Sets The Random Question Variables
+            int randomCounter = 0;
+            int randomQuestionPick;
+
+            // Opens New Menu
+            string TFQuestionsFile = File.ReadAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\TFQuestions.txt");
+            string MAQuestionsFile = File.ReadAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\MAQuestions.txt");
+
+            if (TFQuestionsFile != "" && TFQuestionsFile != " ")
+            {
+                if (TFQuestionsFile.Contains("IMG_INCLUDED"))
+                {
+                    randomCounter++;
+                }
+
+                if (TFQuestionsFile.Contains("IMG_NOT_INCLUDED"))
+                {
+                    randomCounter++;
+                }
+            }
+
+            if (MAQuestionsFile != "" && MAQuestionsFile != " ")
+            {
+                if (MAQuestionsFile.Contains("IMG_INCLUDED"))
+                {
+                    randomCounter++;
+                }
+
+                if (MAQuestionsFile.Contains("IMG_NOT_INCLUDED"))
+                {
+                    randomCounter++;
+                }
+            }
+
+            // Picks A Random Question Type
+            Random random = new Random();
+            randomQuestionPick = random.Next(0, randomCounter);
+
+            // Checks The Random Pick
+            if (randomQuestionPick == 0)
+            {
+                Quizmaster_TFImageQuestion quizmaster_TFImageQuestionINS = new Quizmaster_TFImageQuestion();
+                this.Dispose();
+                quizmaster_TFImageQuestionINS.Show();
+            }
+            else if (randomQuestionPick == 1)
+            {
+                Quizmaster_TFNoImageQuestion quizmaster_TFNoImageQuestionINS = new Quizmaster_TFNoImageQuestion();
+                this.Dispose();
+                quizmaster_TFNoImageQuestionINS.Show();
+            }
+            else if (randomQuestionPick == 2)
+            {
+                Quizmaster_MAImageQuestion quizmaster_MAImageQuestionINS = new Quizmaster_MAImageQuestion();
+                this.Dispose();
+                quizmaster_MAImageQuestionINS.Show();
+            }
+            else if (randomQuestionPick == 3)
+            {
+                Quizmaster_MANoImageQuestion quizmaster_MANoImageQuestionINS = new Quizmaster_MANoImageQuestion();
+                this.Dispose();
+                quizmaster_MANoImageQuestionINS.Show();
+            }
         }
     }
 }
