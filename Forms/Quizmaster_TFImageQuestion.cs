@@ -35,8 +35,6 @@ namespace Quizmaster.Forms
 
         private void Quizmaster_TFImageQuestion_Load(object sender, EventArgs e)
         {
-            Classes.Configuration.questionCount++;
-
             while (true)
             {
                 questionTEXT = File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt")[random.Next(0, File.ReadAllLines(Classes.Configuration.drivePath + "Quizmaster\\Questions & Genres\\TFQuestions.txt").Length)].ToString();
@@ -105,6 +103,12 @@ namespace Quizmaster.Forms
 
         private void SubmitAnswer_ButtonINS_Click(object sender, EventArgs e)
         {
+            // Sets The Variable
+            userQuestionAnswer = AnswerRichTextBox.Text;
+
+            // Increases The Question Count By 1
+            Classes.Configuration.questionCount++;
+
             if (userQuestionAnswer == questionAnswer)
             {
                 Classes.Configuration.trueAnswers++;

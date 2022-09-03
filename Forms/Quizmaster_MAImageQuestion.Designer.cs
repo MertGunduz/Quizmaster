@@ -116,6 +116,7 @@
             this.Exit_PictureBoxINS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Exit_PictureBoxINS.TabIndex = 0;
             this.Exit_PictureBoxINS.TabStop = false;
+            this.Exit_PictureBoxINS.Click += new System.EventHandler(this.Exit_PictureBoxINS_Click);
             // 
             // BottomMargin_Panel
             // 
@@ -145,6 +146,7 @@
             this.Minimize_PictureBoxINS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Minimize_PictureBoxINS.TabIndex = 1;
             this.Minimize_PictureBoxINS.TabStop = false;
+            this.Minimize_PictureBoxINS.Click += new System.EventHandler(this.Minimize_PictureBoxINS_Click);
             // 
             // QuestionImage_PictureBox
             // 
@@ -183,6 +185,7 @@
             this.D_ButtonINS.TabIndex = 53;
             this.D_ButtonINS.Text = "D Answer";
             this.D_ButtonINS.UseVisualStyleBackColor = false;
+            this.D_ButtonINS.Click += new System.EventHandler(this.D_ButtonINS_Click);
             // 
             // C_ButtonINS
             // 
@@ -199,6 +202,7 @@
             this.C_ButtonINS.TabIndex = 52;
             this.C_ButtonINS.Text = "C Answer";
             this.C_ButtonINS.UseVisualStyleBackColor = false;
+            this.C_ButtonINS.Click += new System.EventHandler(this.C_ButtonINS_Click);
             // 
             // B_ButtonINS
             // 
@@ -215,6 +219,7 @@
             this.B_ButtonINS.TabIndex = 51;
             this.B_ButtonINS.Text = "B Answer";
             this.B_ButtonINS.UseVisualStyleBackColor = false;
+            this.B_ButtonINS.Click += new System.EventHandler(this.B_ButtonINS_Click);
             // 
             // A_ButtonINS
             // 
@@ -231,6 +236,7 @@
             this.A_ButtonINS.TabIndex = 50;
             this.A_ButtonINS.Text = "A Answer";
             this.A_ButtonINS.UseVisualStyleBackColor = false;
+            this.A_ButtonINS.Click += new System.EventHandler(this.A_ButtonINS_Click);
             // 
             // Quizmaster_MAImageQuestion
             // 

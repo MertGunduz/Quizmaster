@@ -143,5 +143,194 @@ namespace Quizmaster.Forms
             C_ButtonINS.Text = cAnswer;
             D_ButtonINS.Text = dAnswer;
         }
+
+        private void A_ButtonINS_Click(object sender, EventArgs e)
+        {
+            // Increases The Question Count By 1
+            Classes.Configuration.questionCount++;
+
+            if (questionAnswer == "A")
+            {
+                Classes.Configuration.trueAnswers++;
+            }
+            else
+            {
+                Classes.Configuration.falseAnswers++;
+            }
+
+            if (Classes.Configuration.questionCount == 10)
+            {
+                MessageBox.Show($"Finished!\n\nTrue Answers: {Classes.Configuration.trueAnswers}\n\nFalse Answers:{Classes.Configuration.falseAnswers}", $"Congratulations {Classes.Configuration.trueAnswers}TRUE/{Classes.Configuration.falseAnswers}FALSE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Quizmaster_MainMenu quizmaster_MainMenu = new Quizmaster_MainMenu();
+                this.Dispose();
+                quizmaster_MainMenu.Show();
+            }
+            else
+            {
+                QuestionSelector();
+            }
+        }
+
+        private void B_ButtonINS_Click(object sender, EventArgs e)
+        {
+            // Increases The Question Count By 1
+            Classes.Configuration.questionCount++;
+
+            if (questionAnswer == "B")
+            {
+                Classes.Configuration.trueAnswers++;
+            }
+            else
+            {
+                Classes.Configuration.falseAnswers++;
+            }
+
+            if (Classes.Configuration.questionCount == 10)
+            {
+                MessageBox.Show($"Finished!\n\nTrue Answers: {Classes.Configuration.trueAnswers}\n\nFalse Answers:{Classes.Configuration.falseAnswers}", $"Congratulations {Classes.Configuration.trueAnswers}TRUE/{Classes.Configuration.falseAnswers}FALSE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Quizmaster_MainMenu quizmaster_MainMenu = new Quizmaster_MainMenu();
+                this.Dispose();
+                quizmaster_MainMenu.Show();
+            }
+            else
+            {
+                QuestionSelector();
+            }
+        }
+
+        private void C_ButtonINS_Click(object sender, EventArgs e)
+        {
+            // Increases The Question Count By 1
+            Classes.Configuration.questionCount++;
+
+            if (questionAnswer == "C")
+            {
+                Classes.Configuration.trueAnswers++;
+            }
+            else
+            {
+                Classes.Configuration.falseAnswers++;
+            }
+
+            if (Classes.Configuration.questionCount == 10)
+            {
+                MessageBox.Show($"Finished!\n\nTrue Answers: {Classes.Configuration.trueAnswers}\n\nFalse Answers:{Classes.Configuration.falseAnswers}", $"Congratulations {Classes.Configuration.trueAnswers}TRUE/{Classes.Configuration.falseAnswers}FALSE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Quizmaster_MainMenu quizmaster_MainMenu = new Quizmaster_MainMenu();
+                this.Dispose();
+                quizmaster_MainMenu.Show();
+            }
+            else
+            {
+                QuestionSelector();
+            }
+        }
+
+        private void D_ButtonINS_Click(object sender, EventArgs e)
+        {
+            // Increases The Question Count By 1
+            Classes.Configuration.questionCount++;
+
+            if (questionAnswer == "D")
+            {
+                Classes.Configuration.trueAnswers++;
+            }
+            else
+            {
+                Classes.Configuration.falseAnswers++;
+            }
+
+            if (Classes.Configuration.questionCount == 10)
+            {
+                MessageBox.Show($"Finished!\n\nTrue Answers: {Classes.Configuration.trueAnswers}\n\nFalse Answers:{Classes.Configuration.falseAnswers}", $"Congratulations {Classes.Configuration.trueAnswers}TRUE/{Classes.Configuration.falseAnswers}FALSE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Quizmaster_MainMenu quizmaster_MainMenu = new Quizmaster_MainMenu();
+                this.Dispose();
+                quizmaster_MainMenu.Show();
+            }
+            else
+            {
+                QuestionSelector();
+            }
+        }
+
+        private void QuestionSelector()
+        {
+            // Sets The Random Question Variables
+            int randomCounter = 0;
+            int randomQuestionPick;
+
+            // Opens New Menu
+            string TFQuestionsFile = File.ReadAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\TFQuestions.txt");
+            string MAQuestionsFile = File.ReadAllText($"{Classes.Configuration.drivePath}Quizmaster\\Questions & Genres\\MAQuestions.txt");
+
+            if (TFQuestionsFile != "" && TFQuestionsFile != " ")
+            {
+                if (TFQuestionsFile.Contains("IMG_INCLUDED"))
+                {
+                    randomCounter++;
+                }
+
+                if (TFQuestionsFile.Contains("IMG_NOT_INCLUDED"))
+                {
+                    randomCounter++;
+                }
+            }
+
+            if (MAQuestionsFile != "" && MAQuestionsFile != " ")
+            {
+                if (MAQuestionsFile.Contains("IMG_INCLUDED"))
+                {
+                    randomCounter++;
+                }
+
+                if (MAQuestionsFile.Contains("IMG_NOT_INCLUDED"))
+                {
+                    randomCounter++;
+                }
+            }
+
+            // Picks A Random Question Type
+            Random random = new Random();
+            randomQuestionPick = random.Next(0, randomCounter);
+
+            // Checks The Random Pick
+            if (randomQuestionPick == 0)
+            {
+                Quizmaster_TFImageQuestion quizmaster_TFImageQuestionINS = new Quizmaster_TFImageQuestion();
+                this.Dispose();
+                quizmaster_TFImageQuestionINS.Show();
+            }
+            else if (randomQuestionPick == 1)
+            {
+                Quizmaster_TFNoImageQuestion quizmaster_TFNoImageQuestionINS = new Quizmaster_TFNoImageQuestion();
+                this.Dispose();
+                quizmaster_TFNoImageQuestionINS.Show();
+            }
+            else if (randomQuestionPick == 2)
+            {
+                Quizmaster_MAImageQuestion quizmaster_MAImageQuestionINS = new Quizmaster_MAImageQuestion();
+                this.Dispose();
+                quizmaster_MAImageQuestionINS.Show();
+            }
+            else if (randomQuestionPick == 3)
+            {
+                Quizmaster_MANoImageQuestion quizmaster_MANoImageQuestionINS = new Quizmaster_MANoImageQuestion();
+                this.Dispose();
+                quizmaster_MANoImageQuestionINS.Show();
+            }
+        }
+
+        private void Exit_PictureBoxINS_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void Minimize_PictureBoxINS_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
