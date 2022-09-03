@@ -257,6 +257,7 @@
             this.Name = "Quizmaster_MAImageQuestion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quizmaster_MAImageQuestion";
+            this.Load += new System.EventHandler(this.Quizmaster_MAImageQuestion_Load);
             this.RightMargin_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBoxINS)).EndInit();
             this.TopMargin_Panel.ResumeLayout(false);

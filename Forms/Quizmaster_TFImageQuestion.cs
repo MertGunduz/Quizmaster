@@ -17,7 +17,6 @@ namespace Quizmaster.Forms
 
         // SYSTEM STRINGS
         string validLine = string.Empty;
-        int validLineLine = 0;
         string question = string.Empty;
         string questionAnswer = string.Empty;
         string questionGenre = string.Empty;
@@ -27,7 +26,6 @@ namespace Quizmaster.Forms
 
         // INPUT
         string userQuestionAnswer;
-
         Random random = new Random();
 
         public Quizmaster_TFImageQuestion()
