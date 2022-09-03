@@ -23,3 +23,5 @@ C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Qu
 C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_AddNewQuestionTFMenu.resources
 C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_AddNewQuestionMA.resources
 C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_TFNoImageQuestion.resources
+C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_MAImageQuestion.resources
+C:\Users\u\source\Commercial_Repositories\Quizmaster\obj\Debug\net6.0-windows\Quizmaster.Forms.Quizmaster_MANoImageQuestion.resources

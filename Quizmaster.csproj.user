@@ -16,7 +16,13 @@
     <Compile Update="Forms\Quizmaster_AwakeMenu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Quizmaster_MAImageQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Quizmaster_MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Quizmaster_MANoImageQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Quizmaster_TFImageQuestion.cs">
