@@ -317,5 +317,15 @@ namespace Quizmaster.Forms
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void Exit_PictureBoxINS_Click_1(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void Minimize_PictureBoxINS_Click_1(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
